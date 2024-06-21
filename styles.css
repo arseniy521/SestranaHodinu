@@ -240,36 +240,24 @@ footer p {
     color: #666;
 }
 
-/* Responsive Design */
+/* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
     .header-image, .additional-image {
         width: 100%;
-    }
-
-    .language-switcher {
-        left: 10px;
-        transform: none;
-    }
-
-    .form-section {
-        padding: 10px;
-    }
-
-    .form-container {
-        padding: 15px;
+        height: auto;
     }
 
     .btn-order {
-        font-size: 16px;
-        padding: 8px 15px;
+        font-size: 20px; /* Bigger font size for better visibility */
+        padding: 15px 30px; /* Increase padding */
     }
 
     .get-help-links h3 {
-        font-size: 16px;
+        font-size: 20px; /* Bigger font size for better visibility */
     }
 
     .get-help-links a {
-        font-size: 14px;
+        font-size: 18px; /* Bigger font size for better visibility */
     }
 
     .form-container h2 {
@@ -286,8 +274,8 @@ footer p {
     }
 
     .btn-primary {
-        font-size: 16px;
-        padding: 8px 15px;
+        font-size: 20px; /* Bigger font size for better visibility */
+        padding: 12px 25px; /* Increase padding */
     }
 
     footer p {
@@ -305,5 +293,10 @@ footer p {
 
     #otherService {
         margin-top: 10px; /* Space above the "other" service input */
+    }
+
+    /* Remove the second "order" button */
+    .additional-image + .text-center .btn-order {
+        display: none;
     }
 }
