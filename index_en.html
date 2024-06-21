@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Care Services</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Language Switcher -->
+<div class="language-switcher">
+    <ul>
+        <li><a href="index_cs.html">Čeština</a></li>
+        <li><strong>English</strong></li>
+    </ul>
+</div>
+
+<!-- Main Header -->
+<header class="main-header">
+    <div class="container">
+        <img src="1.png" alt="Home Care Services" class="header-image">
+        <a href="#orderFormSection" class="btn btn-order">Order</a>
+    </div>
+</header>
+
+<!-- Additional Image -->
+<div class="container">
+    <img src="Blue Illustrative Innovation in Medicine Presentation.png" alt="Additional Information" class="additional-image">
+</div>
+
+<!-- Order Form Section -->
+<div class="container form-section" id="orderFormSection">
+    <div class="row">
+        <div class="col-md-6 order-md-2">
+            <div class="form-container">
+                <h2 class="text-center">Order Form</h2>
+                <form action="YOUR_GOOGLE_FORM_URL" method="post" target="_blank" id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Service Date:</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="service1" value="Infusion">
+                            <label class="form-check-label" for="service1">Infusion</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="service2" value="Injection">
+                            <label class="form-check-label" for="service2">Injection</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="service3" value="Medication Purchase">
+                            <label class="form-check-label" for="service3">Medication Purchase</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="service4" value="Other">
+                            <label class="form-check-label" for="service4">Other</label>
+                        </div>
+                        <input type="text" class="form-control mt-2" id="otherService" placeholder="If Other, please specify">
+                    </div>
+                    <div class="form-group">
+                        <label for="prescription">Do you have a prescription from your doctor?</label>
+                        <select class="form-control" id="prescription" required>
+                            <option value="">Select an option</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Additional Details:</label>
+                        <textarea class="form-control" id="details" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <img src="Blue Illustrative Innovation in Medicine Presentation (1).png" alt="Innovation in Medicine" class="form-side-image">
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4">
+    <div class="container">
+        <p>&copy; 2024 Home Care Services. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Smooth scroll to form
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>

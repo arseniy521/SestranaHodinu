@@ -1,0 +1,177 @@
+/* General Body and Background Styles */
+body {
+    background-color: #F0F6FF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Header Styling */
+.main-header {
+    background-color: #F0F6FF;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of the language switcher */
+}
+
+/* Header Image Styling */
+.header-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; /* Ensure image is behind the language switcher */
+}
+
+/* Order Button Styling */
+.btn-order {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 2; /* Ensure button is above the image */
+    transition: background-color 0.3s;
+}
+
+.btn-order:hover {
+    background-color: #357abd;
+}
+
+/* Additional Image Styling */
+.additional-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Form Side Image Styling */
+.form-side-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; /* Center the image */
+}
+
+/* Language Switcher Styling */
+.language-switcher {
+    position: absolute;
+    top: 10px; /* Adjusted for better visibility */
+    left: 50%; /* Centering the switcher */
+    transform: translateX(-50%); /* Precise center alignment */
+    background-color: #ffffff; /* Background color */
+    border: 1px solid #3B365F; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for aesthetic spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 2; /* Ensure switcher is above the header image */
+}
+
+.language-switcher ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ensures text is centered if screen size changes */
+}
+
+.language-switcher ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.language-switcher ul li a {
+    text-decoration: none;
+    color: #3B365F;
+    font-weight: bold;
+    padding: 5px 10px; /* Padding makes it easier to click on mobile */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.language-switcher ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    background-color: #eef5ff; /* Background color on hover */
+    color: #29263D; /* Darker blue color on hover */
+}
+
+/* Additional Styling for Other Elements */
+.site-title {
+    color: #3B365F;
+    font-size: 2.5em;
+    margin-top: 10px; /* Space above the title */
+}
+
+.site-description {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Space below the description */
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-top: 30px;
+    background-color: #F0F6FF; /* Matching the body background */
+    padding: 20px; /* Add padding to the form section */
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Adjusted to 100% for responsive design */
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        max-width: 400px; /* Smaller form width for larger screens */
+    }
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group label, .form-group input, .form-group select, .form-group textarea {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Full width for form elements */
+    margin-bottom: 10px; /* Space below each form element */
+    border: 1px solid #ccc; /* Border for form elements */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white; /* Text color for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F0F6FF;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px; /* Space above the footer */
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
