@@ -1,4 +1,6 @@
 /* General Body and Background Styles */
+@import url('https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap');
+
 body {
     background-color: #F0F6FF;
     font-family: Arial, sans-serif;
@@ -25,17 +27,15 @@ body {
 
 /* Order Button Styling */
 .btn-order {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #4a90e2;
+    position: relative;
+    display: inline-block;
+    background-color: #3B365F;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
-    z-index: 2; /* Ensure button is above the image */
+    margin-top: -10px; /* Adjusted for better visibility */
     transition: background-color 0.3s;
 }
 
@@ -43,19 +43,37 @@ body {
     background-color: #357abd;
 }
 
+/* Get Help Links Styling */
+.get-help-links {
+    color: #3B365F;
+    font-size: 16px;
+    z-index: 2;
+    text-align: center;
+    margin-top: 10px; /* Space below the button */
+}
+
+.get-help-links h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #3B365F;
+}
+
+.get-help-links a {
+    color: #3B365F;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.get-help-links a:hover {
+    color: #357abd;
+}
+
 /* Additional Image Styling */
 .additional-image {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-}
-
-/* Form Side Image Styling */
-.form-side-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto; /* Center the image */
 }
 
 /* Language Switcher Styling */
@@ -112,6 +130,26 @@ body {
     margin-bottom: 20px; /* Space below the description */
 }
 
+/* How It Works Section Styling */
+.how-it-works-section {
+    background-color: #F0F6FF;
+    padding: 20px;
+    font-family: 'Coco Gothic', sans-serif;
+}
+
+.how-it-works-section h2 {
+    font-family: 'TAN Heading', serif;
+    font-size: 28px;
+    color: #3B365F;
+    margin-bottom: 20px;
+}
+
+.how-it-works-section p {
+    font-size: 23px;
+    color: #3B365F;
+    margin-bottom: 10px;
+}
+
 /* Form Section Styling */
 .form-section {
     margin-top: 30px;
@@ -139,7 +177,15 @@ body {
     margin-bottom: 20px;
 }
 
-.form-group label, .form-group input, .form-group select, .form-group textarea {
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3B365F;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, .form-group select, .form-group textarea {
     font-size: 14px;
     padding: 10px;
     border-radius: 5px;
