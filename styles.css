@@ -55,7 +55,7 @@ body {
 .get-help-links h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #3B365F;
+    color: #3b365f;
 }
 
 .get-help-links a {
@@ -66,7 +66,7 @@ body {
 }
 
 .get-help-links a:hover {
-    color: #357abd;
+    color: #3b365f;
 }
 
 /* Additional Image Styling */
@@ -171,6 +171,16 @@ body {
     .form-container {
         max-width: 600px; /* Smaller form width for larger screens */
     }
+
+    .form-check-inline {
+        display: inline-block; /* Ensure checkboxes are inline for desktop */
+        margin-right: 15px; /* Space between checkboxes */
+        vertical-align: middle; /* Align checkboxes with labels */
+    }
+
+    .form-check-label {
+        vertical-align: middle; /* Align labels with checkboxes */
+    }
 }
 
 .form-container h2 {
@@ -204,17 +214,12 @@ body {
     margin-bottom: 10px; /* Space between checkboxes */
 }
 
-.form-check-inline {
-    display: block; /* Ensure checkboxes are stacked on small screens */
-    margin-bottom: 10px; /* Space between checkboxes */
-}
-
 #otherService {
     margin-top: 10px; /* Space above the "other" service input */
 }
 
 .btn-primary {
-    background-color: #4a90e2;
+    background-color: #3b365f;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -242,6 +247,13 @@ footer p {
 
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
+    .language-switcher {
+        position: static; /* Place language switcher above main image */
+        transform: none;
+        margin-bottom: 20px;
+        text-align: center; /* Center align on mobile */
+    }
+
     .header-image, .additional-image {
         width: 100%;
         height: auto;

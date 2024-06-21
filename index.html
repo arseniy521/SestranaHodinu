@@ -8,7 +8,14 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
 </head>
+<script>
+    document.getElementById('mainOrderButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('orderFormSection').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 <body>
+
 
 <!-- Language Switcher -->
 <div class="language-switcher">
@@ -25,6 +32,7 @@
         <a href="#orderFormSection" class="btn btn-order">Objednat</a>
         <div class="get-help-links">
             <h3>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat</h3>
+            <h3>+420 773 629 123</h3>
             <a href="YOUR_WHATSAPP_LINK">WhatsApp</a> |
             <a href="YOUR_TELEGRAM_LINK">Telegram</a> |
             <a href="YOUR_FACEBOOK_LINK">Facebook</a>
@@ -54,9 +62,9 @@
                 <p>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat na WhatsApp, Telegram nebo Facebook. Jsme tu, abychom vám pomohli!</p>
                 <p>📞 Kontaktujte nás:</p>
                 <p>Telefon: +420-773-629-123</p>
-                <p>WhatsApp: <a href="YOUR_WHATSAPP_LINK">Odkaz na WhatsApp</a></p>
-                <p>Telegram: <a href="YOUR_TELEGRAM_LINK">Odkaz na Telegram</a></p>
-                <p>Facebook: <a href="YOUR_FACEBOOK_LINK">Odkaz na Facebook</a></p>
+                <p><a href="YOUR_WHATSAPP_LINK">WhatsApp</a></p>
+                <p><a href="YOUR_TELEGRAM_LINK">Telegram</a></p>
+                <p><a href="YOUR_FACEBOOK_LINK">Facebook</a></p>
             </div>
         </div>
         <div class="col-md-6 order-md-2">

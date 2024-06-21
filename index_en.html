@@ -8,6 +8,12 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
 </head>
+<script>
+    document.getElementById('mainOrderButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('orderFormSection').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 <body>
 
 <!-- Language Switcher -->
@@ -25,6 +31,7 @@
         <a href="#orderFormSection" class="btn btn-order">Order</a>
         <div class="get-help-links">
             <h3>If you have any questions, feel free to call us or write to us</h3>
+            <h3>+420 773 629 123</h3>
             <a href="YOUR_WHATSAPP_LINK">WhatsApp</a> |
             <a href="YOUR_TELEGRAM_LINK">Telegram</a> |
             <a href="YOUR_FACEBOOK_LINK">Facebook</a>
@@ -55,9 +62,9 @@
                 <p>If you have any questions, feel free to call us or write to us on WhatsApp, Telegram, or Facebook. We are here to help!</p>
                 <p>📞 Contact Us:</p>
                 <p>Phone: +420-773-629-123</p>
-                <p>WhatsApp: <a href="YOUR_WHATSAPP_LINK">WhatsApp Link</a></p>
-                <p>Telegram: <a href="YOUR_TELEGRAM_LINK">Telegram Link</a></p>
-                <p>Facebook: <a href="YOUR_FACEBOOK_LINK">Facebook Link</a></p>
+                <p><a href="YOUR_WHATSAPP_LINK">WhatsApp</a></p>
+                <p><a href="YOUR_TELEGRAM_LINK">Telegram</a></p>
+                <p><a href="YOUR_FACEBOOK_LINK">Facebook</a></p>
             </div>
         </div>
         <div class="col-md-6 order-md-2">
