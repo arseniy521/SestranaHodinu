@@ -162,8 +162,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Adjusted to 100% for responsive design */
-    margin: auto;
+    margin-bottom: 20px; /* Space between forms */
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -175,6 +175,10 @@ body {
 .form-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
 }
 
 .form-group label {
@@ -274,5 +278,9 @@ footer p {
 
     footer p {
         font-size: 14px;
+    }
+
+    .form-container {
+        margin-bottom: 20px; /* Space between forms */
     }
 }
