@@ -221,3 +221,58 @@ footer p {
     margin: 0;
     color: #666;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-image, .additional-image {
+        width: 100%;
+    }
+
+    .language-switcher {
+        left: 10px;
+        transform: none;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .btn-order {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .get-help-links h3 {
+        font-size: 16px;
+    }
+
+    .get-help-links a {
+        font-size: 14px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
