@@ -8,12 +8,6 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
 </head>
-<script>
-    document.getElementById('mainOrderButton').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('orderFormSection').scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
 <body>
 
 <!-- Language Switcher -->
@@ -131,7 +125,12 @@
         <p>&copy; 2024 Home Care Services. All rights reserved.</p>
     </div>
 </footer>
-
+<script>
+    document.getElementById('mainOrderButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('orderFormSection').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

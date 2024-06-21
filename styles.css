@@ -55,7 +55,7 @@ body {
 .get-help-links h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #3b365f;
+    color: #3B365F;
 }
 
 .get-help-links a {
@@ -66,7 +66,7 @@ body {
 }
 
 .get-help-links a:hover {
-    color: #3b365f;
+    color: #357abd;
 }
 
 /* Additional Image Styling */
@@ -79,7 +79,7 @@ body {
 /* Language Switcher Styling */
 .language-switcher {
     position: absolute;
-    top: 10px; /* Adjusted for better visibility */
+    top: 10px; /* Positioned higher than the main image */
     left: 50%; /* Centering the switcher */
     transform: translateX(-50%); /* Precise center alignment */
     background-color: #ffffff; /* Background color */
@@ -87,7 +87,7 @@ body {
     border-radius: 10px; /* Rounded corners */
     padding: 5px 10px; /* Padding for aesthetic spacing */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    z-index: 2; /* Ensure switcher is above the header image */
+    z-index: 3; /* Ensure switcher is above the header image */
 }
 
 .language-switcher ul {
@@ -219,7 +219,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #3b365f;
+    background-color: #4a90e2;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
