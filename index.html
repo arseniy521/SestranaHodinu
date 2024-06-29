@@ -10,7 +10,6 @@
 </head>
 <body>
 
-
 <!-- Language Switcher -->
 <div class="language-switcher">
     <ul>
@@ -27,9 +26,9 @@
         <div class="get-help-links">
             <h3>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat</h3>
             <h3>+420 773 629 123</h3>
-            <a href="YOUR_WHATSAPP_LINK">WhatsApp</a> |
-            <a href="YOUR_TELEGRAM_LINK">Telegram</a> |
-            <a href="YOUR_FACEBOOK_LINK">Facebook</a>
+            <a href="https://wa.me/771268113">WhatsApp</a> |
+            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
+            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
         </div>
     </div>
 </header>
@@ -56,54 +55,54 @@
                 <p>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat na WhatsApp, Telegram nebo Facebook. Jsme tu, abychom vám pomohli!</p>
                 <p>📞 Kontaktujte nás:</p>
                 <p>Telefon: +420-773-629-123</p>
-                <p><a href="YOUR_WHATSAPP_LINK">WhatsApp</a></p>
-                <p><a href="YOUR_TELEGRAM_LINK">Telegram</a></p>
-                <p><a href="YOUR_FACEBOOK_LINK">Facebook</a></p>
+            <a href="https://wa.me/771268113">WhatsApp</a> |
+            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
+            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
             </div>
         </div>
         <div class="col-md-6 order-md-2">
             <div class="form-container">
                 <h2 class="text-center">Objednávkový Formulář</h2>
-                <form action="YOUR_GOOGLE_FORM_URL" method="post" target="_blank" id="orderForm">
+                <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="_blank" id="orderForm">
                     <div class="form-group">
                         <label for="name">Jméno:</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="address">Adresa:</label>
-                        <input type="text" class="form-control" id="address" required>
+                        <input type="text" class="form-control" id="address" name="address" required>
                     </div>
                     <div class="form-group">
                         <label for="date">Datum služby:</label>
-                        <input type="date" class="form-control" id="date" required>
+                        <input type="date" class="form-control" id="date" name="date" required>
                     </div>
                     <div class="form-group">
                         <label for="time">Čas:</label>
-                        <input type="time" class="form-control" id="time" required>
+                        <input type="time" class="form-control" id="time" name="time" required>
                     </div>
                     <div class="form-group">
                         <label for="service">Služba:</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service1" value="Infuze">
+                            <input class="form-check-input" type="checkbox" id="service1" name="service" value="Infuze">
                             <label class="form-check-label" for="service1">Infuze</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service2" value="Injekce">
+                            <input class="form-check-input" type="checkbox" id="service2" name="service" value="Injekce">
                             <label class="form-check-label" for="service2">Injekce</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service3" value="Nákup léků">
+                            <input class="form-check-input" type="checkbox" id="service3" name="service" value="Nákup léků">
                             <label class="form-check-label" for="service3">Nákup léků</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service4" value="Jiné">
+                            <input class="form-check-input" type="checkbox" id="service4" name="service" value="Jiné">
                             <label class="form-check-label" for="service4">Jiné</label>
                         </div>
-                        <input type="text" class="form-control mt-2" id="otherService" placeholder="Pokud Jiné, upřesněte">
+                        <input type="text" class="form-control mt-2" id="otherService" name="otherService" placeholder="Pokud Jiné, upřesněte">
                     </div>
                     <div class="form-group">
                         <label for="prescription">Máte recept od svého lékaře?</label>
-                        <select class="form-control" id="prescription" required>
+                        <select class="form-control" id="prescription" name="prescription" required>
                             <option value="">Vyberte možnost</option>
                             <option value="Ano">Ano</option>
                             <option value="Ne">Ne</option>
@@ -111,7 +110,7 @@
                     </div>
                     <div class="form-group">
                         <label for="details">Další podrobnosti:</label>
-                        <textarea class="form-control" id="details" rows="3"></textarea>
+                        <textarea class="form-control" id="details" name="details" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Odeslat</button>
                 </form>

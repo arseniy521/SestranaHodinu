@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Care Services</title>
+    <title>Sister for an Hour Service</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
@@ -21,14 +21,14 @@
 <!-- Main Header -->
 <header class="main-header">
     <div class="container">
-        <img src="main_en.png" alt="Home Care Services" class="header-image">
-        <a href="#orderFormSection" class="btn btn-order">Order</a>
+        <img src="main_en.png" alt="Sister for an Hour" class="header-image">
+        <a href="#orderFormSection" class="btn btn-order" id="mainOrderButton">Order</a>
         <div class="get-help-links">
-            <h3>If you have any questions, feel free to call us or write to us</h3>
+            <h3>If you have any questions, feel free to call or write us</h3>
             <h3>+420 773 629 123</h3>
-            <a href="YOUR_WHATSAPP_LINK">WhatsApp</a> |
-            <a href="YOUR_TELEGRAM_LINK">Telegram</a> |
-            <a href="YOUR_FACEBOOK_LINK">Facebook</a>
+            <a href="https://wa.me/771268113">WhatsApp</a> |
+            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
+            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
         </div>
     </div>
 </header>
@@ -41,77 +41,76 @@
     </div>
 </div>
 
-
 <!-- Order Form Section -->
 <div class="container form-section" id="orderFormSection">
     <div class="row">
         <div class="col-md-6">
             <div class="form-container">
-                <h2>🛠️ How It Works?</h2>
-                <p>📝 Leave Your Order:</p>
-                <p>Fill out our simple order form on the website. Or you can place your order by phone call, Telegram, WhatsApp, or Facebook.</p>
-                <p>📞 We Contact You:</p>
-                <p>Once you leave your order, we will contact you back shortly to confirm the details and arrange the service.</p>
-                <p>❓ Have Questions?</p>
-                <p>If you have any questions, feel free to call us or write to us on WhatsApp, Telegram, or Facebook. We are here to help!</p>
-                <p>📞 Contact Us:</p>
+                <h1>🛠️ How it works?</h1>
+                <h2>📝 Leave an order:</h2>
+                <p>Fill out a simple order form on our website. Or you can place an order by phone, Telegram, WhatsApp, or Facebook.</p>
+                <h2>📞 We will contact you:</h2>
+                <p>Once you leave an order, we will contact you soon to confirm the details and arrange the service.</p>
+                <h2>❓ Have questions?</h2>
+                <p>If you have any questions, feel free to call or write to us on WhatsApp, Telegram, or Facebook. We are here to help you!</p>
+                <p>📞 Contact us:</p>
                 <p>Phone: +420-773-629-123</p>
-                <p><a href="YOUR_WHATSAPP_LINK">WhatsApp</a></p>
-                <p><a href="YOUR_TELEGRAM_LINK">Telegram</a></p>
-                <p><a href="YOUR_FACEBOOK_LINK">Facebook</a></p>
+            <a href="https://wa.me/771268113">WhatsApp</a> |
+            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
+            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
             </div>
         </div>
         <div class="col-md-6 order-md-2">
             <div class="form-container">
                 <h2 class="text-center">Order Form</h2>
-                <form action="YOUR_GOOGLE_FORM_URL" method="post" target="_blank" id="orderForm">
+                <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="_blank" id="orderForm">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="address">Address:</label>
-                        <input type="text" class="form-control" id="address" required>
+                        <input type="text" class="form-control" id="address" name="address" required>
                     </div>
                     <div class="form-group">
                         <label for="date">Service Date:</label>
-                        <input type="date" class="form-control" id="date" required>
+                        <input type="date" class="form-control" id="date" name="date" required>
                     </div>
                     <div class="form-group">
                         <label for="time">Time:</label>
-                        <input type="time" class="form-control" id="time" required>
+                        <input type="time" class="form-control" id="time" name="time" required>
                     </div>
                     <div class="form-group">
                         <label for="service">Service:</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service1" value="Infusion">
+                            <input class="form-check-input" type="checkbox" id="service1" name="service" value="Infusion">
                             <label class="form-check-label" for="service1">Infusion</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service2" value="Injection">
+                            <input class="form-check-input" type="checkbox" id="service2" name="service" value="Injection">
                             <label class="form-check-label" for="service2">Injection</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service3" value="Medication Purchase">
-                            <label class="form-check-label" for="service3">Medication Purchase</label>
+                            <input class="form-check-input" type="checkbox" id="service3" name="service" value="Medication purchase">
+                            <label class="form-check-label" for="service3">Medication purchase</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service4" value="Other">
+                            <input class="form-check-input" type="checkbox" id="service4" name="service" value="Other">
                             <label class="form-check-label" for="service4">Other</label>
                         </div>
-                        <input type="text" class="form-control mt-2" id="otherService" placeholder="If Other, please specify">
+                        <input type="text" class="form-control mt-2" id="otherService" name="otherService" placeholder="If Other, specify">
                     </div>
                     <div class="form-group">
                         <label for="prescription">Do you have a prescription from your doctor?</label>
-                        <select class="form-control" id="prescription" required>
-                            <option value="">Select an option</option>
+                        <select class="form-control" id="prescription" name="prescription" required>
+                            <option value="">Choose an option</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="details">Additional Details:</label>
-                        <textarea class="form-control" id="details" rows="3"></textarea>
+                        <label for="details">Additional details:</label>
+                        <textarea class="form-control" id="details" name="details" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -122,7 +121,7 @@
 
 <footer class="text-center py-4">
     <div class="container">
-        <p>&copy; 2024 Home Care Services. All rights reserved.</p>
+        <p>&copy; 2024 Sister for an Hour Service. All rights reserved.</p>
     </div>
 </footer>
 <script>
