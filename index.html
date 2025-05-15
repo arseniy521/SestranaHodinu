@@ -1,136 +1,328 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Služba Sestra Na Hodinu</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sestra na Hodinu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-<!-- Language Switcher -->
-<div class="language-switcher">
-    <ul>
-        <li><strong>Čeština</strong></li>
-        <li><a href="index_en.html">English</a></li>
-    </ul>
-</div>
-
-<!-- Main Header -->
-<header class="main-header">
-    <div class="container">
-        <img src="main_cz.png" alt="Sestra Na Hodinu" class="header-image">
-        <a href="#orderFormSection" class="btn btn-order" id="mainOrderButton">Objednat</a>
-        <div class="get-help-links">
-            <h3>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat</h3>
-            <h3>+420 773 629 123</h3>
-            <a href="https://wa.me/+420771268113">WhatsApp</a> |
-            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
-            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
-        </div>
-    </div>
-</header>
-
-<!-- Additional Image -->
-<div class="container">
-    <img src="about_cz.png" alt="Additional Information" class="additional-image">
-    <div class="text-center">
-        <a href="#orderFormSection" class="btn btn-order">Objednat</a>
-    </div>
-</div>
-
-<!-- Order Form Section -->
-<div class="container form-section" id="orderFormSection">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-container">
-                <h1>🛠️ Jak to funguje?</h1>
-                <h2>📝 Zanechte objednávku:</h2>
-                <p>Vyplňte jednoduchý objednávkový formulář na našich stránkách. Nebo můžete objednávku provést telefonicky, přes Telegram, WhatsApp nebo Facebook.</p>
-                <h2>📞 Kontaktujeme vás:</h2>
-                <p>Jakmile zanecháte objednávku, brzy vás kontaktujeme zpět, abychom potvrdili detaily a domluvili službu.</p>
-                <h2>❓ Máte otázky?</h2>
-                <p>Pokud máte nějaké otázky, neváhejte nám zavolat nebo napsat na WhatsApp, Telegram nebo Facebook. Jsme tu, abychom vám pomohli!</p>
-                <p>📞 Kontaktujte nás:</p>
-                <p>Telefon: +420-773-629-123</p>
-            <a href="https://wa.me/+420771268113">WhatsApp</a> |
-            <a href="https://t.me/sestra_na_hodinu">Telegram</a> |
-            <a href="https://www.facebook.com/share/4TQGTyq5icN2Xg4B/?mibextid=LQQJ4d">Facebook</a>
-            </div>
-        </div>
-        <div class="col-md-6 order-md-2">
-            <div class="form-container">
-                <h2 class="text-center">Objednávkový Formulář</h2>
-                <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="_blank" id="orderForm">
-                    <div class="form-group">
-                        <label for="name">Jméno:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Adresa:</label>
-                        <input type="text" class="form-control" id="address" name="address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Datum služby:</label>
-                        <input type="date" class="form-control" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Čas:</label>
-                        <input type="time" class="form-control" id="time" name="time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Služba:</label><br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service1" name="service" value="Infuze">
-                            <label class="form-check-label" for="service1">Infuze</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service2" name="service" value="Injekce">
-                            <label class="form-check-label" for="service2">Injekce</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service3" name="service" value="Nákup léků">
-                            <label class="form-check-label" for="service3">Nákup léků</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="service4" name="service" value="Jiné">
-                            <label class="form-check-label" for="service4">Jiné</label>
-                        </div>
-                        <input type="text" class="form-control mt-2" id="otherService" name="otherService" placeholder="Pokud Jiné, upřesněte">
-                    </div>
-                    <div class="form-group">
-                        <label for="prescription">Máte recept od svého lékaře?</label>
-                        <select class="form-control" id="prescription" name="prescription" required>
-                            <option value="">Vyberte možnost</option>
-                            <option value="Ano">Ano</option>
-                            <option value="Ne">Ne</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="details">Další podrobnosti:</label>
-                        <textarea class="form-control" id="details" name="details" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Odeslat</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="text-center py-4">
-    <div class="container">
-        <p>&copy; 2024 Služba Sestra Na Hodinu. Všechna práva vyhrazena.</p>
-    </div>
-</footer>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
 <script>
-    document.getElementById('mainOrderButton').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('orderFormSection').scrollIntoView({ behavior: 'smooth' });
-    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VXT0FR7KH1');
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">S</div>
+                    <div class="logo-text">Sestra na Hodinu</div>
+                </div>
+                <!-- Add this to your navigation menu -->
+                <!-- Jazykový přepínač -->
+                <div class="language-switcher">
+                    <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="index.html" selected>English</option>
+                    <option value="index-cs.html">Čeština</option>
+                    <option value="index-ru.html">Русский</option>
+                    <option value="index-uk.html">Українська</option>
+                    </select>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+<!--                    <li><a href="#testimonials">Testimonials</a></li>-->
+                    <li><a href="#pricing">Pricing</a></li>
+<!--                    <li><a href="articles.html">Articles</a></li>-->
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile-nav">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#workflow">Workflow</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="articles.html">Articles</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container2">
+                <div class="hero-content">
+                    <!-- <h1>Same-Day Nurse Booking
+                        at Your Doorstep</h1> -->
+                    <h1>
+                        <span id="dynamic-text">Prescribed IV Drips</span> performed by a nurse in your home.
+                    </h1>
+                    <!-- <h1>Prescribed Injections performed by a nurse in your home.</h1> -->
+                    <p>Fast, reliable, and professional healthcare at home.</p>
+                    <a href="#" id="openOrderNurseModalBtn" class="button">Order Nurse</a>
+                </div>
+                <img src="drips_cl2.png" alt="Healthcare Illustration" class="hero-image">
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">We provide to you the best choices for you. Adjust it to your health
+                    needs and make sure your undergo treatment with our highly qualified doctors.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="icon_resized_2.png" alt="IV Drips">
+                        </div>
+                        <h3 class="service-title">Prescribed IV Drip</h3>
+                        <p class="service-description"> Administered based on your doctor’s prescription under
+                            professional supervision to treat specific conditions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="icon_resized_1.png" alt="Vitamin">
+                        </div>
+                        <h3 class="service-title">Vitamin IV Drip</h3>
+                        <p class="service-description">Intravenous fluids, vitamins, and medications for various health
+                            needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="icon_resized_3.png" alt="Injections">
+                        </div>
+                        <h3 class="service-title">Intramuscular Injection</h3>
+                        <p class="service-description">Administration of prescribed medication—ideal for antibiotics,
+                            vitamins, or hormonal therapy.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="inject.png" alt="Injections">
+                        </div>
+                        <h3 class="service-title">Subcutaneous Injection</h3>
+                        <p class="service-description">Effective delivery of prescribed medications like insulin or
+                            anticoagulants.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="massage.png" alt="Therapeutic Massage">
+                        </div>
+                        <h3 class="service-title">Therapeutic Massage</h3>
+                        <p class="service-description">Massage therapy to manage pain, rehabilitate injuries, and reduce
+                            stress.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="surfe.png" alt="Sport Massage">
+                        </div>
+                        <h3 class="service-title">Sport Massage</h3>
+                        <p class="service-description">Specialized massage for athletes to enhance performance and
+                            recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="workflow" class="workflow-section">
+            <div class="container">
+                <div class="workflow-content">
+                    <h2 class="section-title">Our Workflow</h2>
+                    <p class="section-description">Our dedicated patient engagement app and web portal allow you to
+                        access information instantaneously (no tedious form, long calls, or administrative hassle) and
+                        securely.</p>
+                    <div class="workflow-image">
+                        <img src="workflow1.png" alt="Workflow Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nurses" class="nurses-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Nurses</h2>
+                <p class="section-description">Our team of professional and experienced nurses is here to provide you
+                    with the best care possible.</p>
+                <div class="nurses-grid">
+                    <div class="nurse-card">
+                        <img src="freepik__adjust__95206.png" alt="Nurse Anna" class="nurse-image">
+                        <h3 class="nurse-name">Azbeta Novotná</h3>
+                        <p class="nurse-role">Senior Nurse</p>
+                        <p class="nurse-description">With over 15 years in pediatric oncology at Motol University
+                            Hospital, she brings deep expertise and empathy to every visit. She specializes in pediatric
+                            nursing and is furthering her training in oncology. Azbeta also has experience providing
+                            medical support at public events.</p>
+                    </div>
+                    <div class="nurse-card">
+                        <img src="ivana.jpg" alt="Jana Králová" class="nurse-image">
+                        <h3 class="nurse-name">Jana Králová</h3>
+                        <p class="nurse-role">Pediatric Nurse</p>
+                        <p class="nurse-description">She spent 10 years working in internal medicine at Thomayer
+                            Hospital, where she gained deep knowledge in managing chronic and acute conditions.
+                            She has also supported patients in hospice settings and brings a calm, reassuring presence
+                            to every home visit.</p>
+                    </div>
+                    <div class="nurse-card">
+                        <img src="freepik__adjust__87469.jpeg" alt="Nurse Emily" class="nurse-image">
+                        <h3 class="nurse-name">Tomáš Dvořák</h3>
+                        <p class="nurse-role">Emergency Nurse</p>
+                        <p class="nurse-description">He is an experienced nurse with a strong background in emergency
+                            care.
+                            He worked for 8 years in emergency departments, where he handled critical situations with
+                            speed and precision. Tomáš studied nursing at Charles University.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">Our Pricing Policy</h2>
+            <p class="section-description">Transparent and fair pricing policy without hidden fees</p>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price (1st Service)</th>
+                        <th>Add-on Service (-30%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Service">Intramuscular Injection (e.g., Vitamin B, antibiotics)</td>
+                        <td data-title="Price (1st Service)">699 CZK</td>
+                        <td data-title="Add-on Service (-30%)">499 CZK <span class="discount">(-30%)</span></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Service">Subcutaneous Injection (e.g., insulin)</td>
+                        <td data-title="Price (1st Service)">699 CZK</td>
+                        <td data-title="Add-on Service (-30%)">499 CZK <span class="discount">(-30%)</span></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Service">IV Drip (Standard)</td>
+                        <td data-title="Price (1st Service)">1,199 CZK</td>
+                        <td data-title="Add-on Service (-30%)">849 CZK <span class="discount">(-30%)</span></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Service">IV Drip (Custom) (You provide medication)</td>
+                        <td data-title="Price (1st Service)">1,499 CZK</td>
+                        <td data-title="Add-on Service (-30%)">1,049 CZK <span class="discount">(-30%)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#services" class="button secondary">Learn more</a>
+            </div>
+        </section>
+
+        <!-- <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What people are saying about home healthcare</h2>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">“Our dedicated patient engagement app and web portal allow you to access
+                        information instantaneously (no tedious form, long calls, or administrative hassle) and
+                        securely.”</p>
+                    <p class="testimonial-author">Edward Newgate</p>
+                </div>
+                <div class="slider-navigation">
+                    <button class="slider-button prev-button">&#8592;</button>
+                    <div class="slider-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <button class="slider-button next-button">&#8594;</button>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-map">
+                        <img src="map.png" alt="Location Map">
+                    </div>
+                    <div class="location-details">
+                        <h1 class="section-title">We Operate in Prague Area</h1>
+                        <ul class="location-bullets">
+                            <right>
+                                <li>Fast and reliable healthcare services.</li>
+                                <li>Professional nurses available 24/7.</li>
+                            </right>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Find a doctor</a></li>
+                        <li><a href="#">Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Region</h3>
+                    <ul>
+                        <li><a href="#">Prague</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact support</a></li>
+                        <li><a href="#">Instructions</a></li>
+                        <li><a href="#">How it works</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">©Sestra na Hodinu 2025. All rights reserved</p>
+        </div>
+    </footer>
+
+    <div id="orderNurseModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
+            <h1>We're Opening Soon!</h1>
+            <h2>Get an exclusive <strong>50% discount</strong> on your first order!</h2>
+            <p>We'll email you your unique promo code</p>
+            <form id="promoEmailForm">
+                <label for="modalEmailInput"></label>
+                <input type="email" id="modalEmailInput" name="email" placeholder="your.email@example.com" required>
+                <button type="submit" class="button">Get Code</button>
+            </form>
+            <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

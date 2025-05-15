@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>Sestra na Hodinu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VXT0FR7KH1');
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">Sestra na Hodinu</div>
+            </div>
+            <!-- Language switcher -->
+            <div class="language-switcher">
+                <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="index.html">English</option>
+                    <option value="index-cs.html">Čeština</option>
+                    <option value="index-ru.html">Русский</option>
+                    <option value="index-uk.html" selected>Українська</option>
+                </select>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#workflow">Як це працює</a></li>
+                <!-- Testimonials & Articles hidden to match English -->
+                <li><a href="#pricing">Ціни</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="mobile-nav">
+                <a href="#home">Головна</a>
+                <a href="#services">Послуги</a>
+                <a href="#workflow">Як це працює</a>
+                <a href="#pricing">Ціни</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container2">
+            <div class="hero-content">
+                <h1>
+                    <span id="dynamic-text">Призначені крапельниці</span> від професійної медсестри у вас вдома.
+                </h1>
+                <p>Швидка, надійна та професійна медична допомога в затишку вашої оселі.</p>
+                <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Викликати медсестру</a>
+            </div>
+            <img src="drips_cl2.png" alt="Медична ілюстрація" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Наші послуги</h2>
+            <p class="section-description">
+                Ми пропонуємо широкий спектр медичних послуг на дому, які надаються кваліфікованими медсестрами. Обирайте, що вам потрібно, і ми організуємо швидкий виїзд.
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><img src="icon_resized_2.png" alt="Крапельниця"></div>
+                    <h3 class="service-title">Призначена IV крапельниця</h3>
+                    <p class="service-description">
+                        Проводиться за рецептом лікаря під наглядом медичного персоналу для конкретних показань.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><img src="icon_resized_1.png" alt="Вітамінна крапельниця"></div>
+                    <h3 class="service-title">Вітамінна IV крапельниця</h3>
+                    <p class="service-description">
+                        Допомагає покращити імунітет і відновити рівень вітамінів та поживних речовин в організмі.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><img src="icon_resized_3.png" alt="Внутрішньом'язова ін'єкція"></div>
+                    <h3 class="service-title">Внутрішньом'язова ін'єкція</h3>
+                    <p class="service-description">
+                        Введення антибіотиків, вітамінів або гормонів безпосередньо в м’яз для швидкої дії.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><img src="inject.png" alt="Підшкірна ін'єкція"></div>
+                    <h3 class="service-title">Підшкірна ін'єкція</h3>
+                    <p class="service-description">
+                        Зручне введення таких ліків, як інсулін чи антикоагулянти, з мінімальним дискомфортом.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><img src="massage.png" alt="Терапевтичний масаж"></div>
+                    <h3 class="service-title">Терапевтичний масаж</h3>
+                    <p class="service-description">
+                        Знімає біль, сприяє реабілітації та зменшує стрес завдяки професійному підходу.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><img src="surfe.png" alt="Спортивний масаж"></div>
+                    <h3 class="service-title">Спортивний масаж</h3>
+                    <p class="service-description">
+                        Для спортсменів різного рівня: підвищення результативності та прискорення відновлення.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <div class="workflow-content">
+                <h2 class="section-title">Як це працює</h2>
+                <p class="section-description">
+                    Ми створили простий та зручний процес без зайвої бюрократії. Просто оформіть заявку, дочекайтеся підтвердження, і медсестра приїде до вас додому.
+                </p>
+                <div class="workflow-image">
+                    <img src="workflow1.png" alt="Процес роботи">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nurses Section -->
+    <section id="nurses" class="nurses-section">
+        <div class="container">
+            <h2 class="section-title">Знайомтесь з нашими медсестрами</h2>
+            <p class="section-description">Наш колектив – це професіонали з великим досвідом в різних галузях медицини.</p>
+            <div class="nurses-grid">
+                <div class="nurse-card">
+                    <img src="freepik__adjust__95206.png" alt="Азбета Новотна" class="nurse-image">
+                    <h3 class="nurse-name">Азбета Новотна</h3>
+                    <p class="nurse-role">Старша медсестра</p>
+                    <p class="nurse-description">
+                        Понад 15 років працювала в дитячій онкології у лікарні Мотол.
+                        Спеціалізується на педіатричному догляді й додатково вивчає онкологію.
+                        Має також досвід роботи на громадських заходах.
+                    </p>
+                </div>
+                <div class="nurse-card">
+                    <img src="ivana.jpg" alt="Яна Кралова" class="nurse-image">
+                    <h3 class="nurse-name">Яна Кралова</h3>
+                    <p class="nurse-role">Медсестра на виїзд</p>
+                    <p class="nurse-description">
+                        10 років працювала в відділенні внутрішніх хвороб у лікарні Томаяра,
+                        допомагаючи пацієнтам з гострими та хронічними захворюваннями.
+                        Відома своєю спокійною та уважною вдачею.
+                    </p>
+                </div>
+                <div class="nurse-card">
+                    <img src="freepik__adjust__87469.jpeg" alt="Томаш Дворжак" class="nurse-image">
+                    <h3 class="nurse-name">Томаш Дворжак</h3>
+                    <p class="nurse-role">Медбрат невідкладної допомоги</p>
+                    <p class="nurse-description">
+                        8 років досвіду на невідкладному прийомі, випускник Карлового Університету.
+                        Майстер швидких рішень та екстрених ситуацій.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <h2 class="section-title">Наші ціни</h2>
+        <p class="section-description">Прозорі тарифи без прихованих оплат.</p>
+        <table class="pricing-table">
+            <thead>
+            <tr>
+                <th>Послуга</th>
+                <th>Ціна (1-ша послуга)</th>
+                <th>Дод. послуга (-30%)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Внутрішньом'язова ін'єкція (вітаміни, антибіотики)</td>
+                <td>699 CZK</td>
+                <td>499 CZK <span class="discount">(-30%)</span></td>
+            </tr>
+            <tr>
+                <td>Підшкірна ін'єкція (інсулін)</td>
+                <td>699 CZK</td>
+                <td>499 CZK <span class="discount">(-30%)</span></td>
+            </tr>
+            <tr>
+                <td>IV крапельниця (стандартна)</td>
+                <td>1 199 CZK</td>
+                <td>849 CZK <span class="discount">(-30%)</span></td>
+            </tr>
+            <tr>
+                <td>IV крапельниця (ваші ліки)</td>
+                <td>1 499 CZK</td>
+                <td>1 049 CZK <span class="discount">(-30%)</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#services" class="button secondary">Дізнатися більше</a>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-map">
+                    <img src="map.png" alt="Карта Праги">
+                </div>
+                <div class="location-details">
+                    <h1 class="section-title">Працюємо в районі Праги</h1>
+                    <ul class="location-bullets">
+                        <li>Швидка та доступна медична допомога за вашою адресою.</li>
+                        <li>Професійні медсестри доступні 7 днів на тиждень.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links-column">
+                <h3>Компанія</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#testimonials">Відгуки</a></li>
+                    <li><a href="#nurses">Наша команда</a></li>
+                    <li><a href="#">Додаток</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-column">
+                <h3>Регіон</h3>
+                <ul>
+                    <li><a href="#location">Прага</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-column">
+                <h3>Допомога</h3>
+                <ul>
+                    <li><a href="#">Центр підтримки</a></li>
+                    <li><a href="#">Зв'язатися з нами</a></li>
+                    <li><a href="#">Інструкція</a></li>
+                    <li><a href="#workflow">Як це працює</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">
+            © Sestra na Hodinu 2025. Усі права захищено.
+        </p>
+    </div>
+</footer>
+<!-- Order Nurse Modal -->
+<div id="orderNurseModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
+        <h1>Скоро відкриваємося!</h1>
+        <h2>Отримайте ексклюзивну <strong>50% знижку</strong> на перше замовлення!</h2>
+        <p>Ми надішлемо вам унікальний промо-код на пошту.</p>
+        <form id="promoEmailForm">
+            <input type="email" id="modalEmailInput" name="email" placeholder="ваш@email.ua" required>
+            <button type="submit" class="button">Отримати код</button>
+        </form>
+        <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
