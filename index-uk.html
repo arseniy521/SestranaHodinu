@@ -8,6 +8,7 @@
     <!-- Google Fonts preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
             href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap"
@@ -277,17 +278,24 @@
     </div>
 </footer>
 <!-- Order Nurse Modal -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 <div id="orderNurseModal" class="modal-overlay">
-    <div class="modal-content">
-        <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
-        <h1>Скоро відкриваємося!</h1>
-        <h2>Отримайте ексклюзивну <strong>50% знижку</strong> на перше замовлення!</h2>
-        <p>Ми надішлемо вам унікальний промо-код на пошту.</p>
-        <form id="promoEmailForm">
-            <input type="email" id="modalEmailInput" name="email" placeholder="ваш@email.ua" required>
-            <button type="submit" class="button">Отримати код</button>
-        </form>
-        <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
+    <div class="form-container">
+        <div class="modal-content">
+            <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
+            <h1>Скоро відкриваємося!</h1>
+            <h2>Отримайте ексклюзивну <strong>50% знижку</strong> на перше замовлення!</h2>
+            <p>Ми надішлемо вам унікальний промо-код на пошту.</p>
+                <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="hidden_iframe" id="promoEmailForm">
+                    <label for="modalEmailInput"></label>
+                    <input type="email" id="modalEmailInput" name="name" placeholder="ваш@email.ua" required>
+                    <button type="submit" class="button" id="submitBtn">
+                        <span class="btn-text">Отримати код</span>
+                        <div id="loadingSpinner" class="spinner"></div>
+                    </button>
+                </form>
+            <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
+        </div>
     </div>
 </div>
 

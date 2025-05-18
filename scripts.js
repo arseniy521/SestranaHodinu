@@ -12,25 +12,22 @@ const translations = {
         "Vitamin Injections"
     ],
     cs: [
-        "Předepsané léky",
         "Předepsané infuze",
         "Předepsané injekce",
         "Antibiotická terapie",
         "Vitamínové injekce"
     ],
     ru: [
-        "Назначенные препараты",
-        "Назначенные капельницы",
-        "Назначенные инъекции",
-        "Антибиотическая терапия",
+        "Капельницы",
+        "Инъекции",
+        "Антибиотики",
         "Витаминные уколы"
     ],
     uk: [
-        "Призначені ліки",
-        "Призначені крапельниці",
-        "Призначені ін’єкції",
+        "Крапельниці",
+        "ін'єкції",
         "Антибіотикотерапія",
-        "Вітамінні уколи"
+        "Вітамінні Крапельниці"
     ]
 };
 const lang = document.documentElement.lang || 'en';
@@ -131,9 +128,6 @@ const promoEmailForm = document.getElementById('promoEmailForm');
 const modalEmailInput = document.getElementById('modalEmailInput');
 const modalFormMessage = document.getElementById('modalFormMessage');
 
-// --- IMPORTANT: Replace with your Google Apps Script Web App URL ---
-const googleScriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
-// Example: 'https://script.google.com/macros/s/XXXXXXXXXXXXXXXXXXXXX/exec';
 
 // Function to open the modal
 function openModal() {
@@ -185,67 +179,85 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Handle form submission
-if (promoEmailForm) {
-    promoEmailForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+document.addEventListener('DOMContentLoaded', () => {
+    const form       = document.getElementById('promoEmailForm');
+    const spinner    = document.getElementById('loadingSpinner');
+    const hiddenIframe = document.getElementById('hidden_iframe');
 
-        const email = modalEmailInput.value.trim();
-        if (!email) {
-            if(modalFormMessage) {
-                modalFormMessage.textContent = 'Please enter a valid email address.';
-                modalFormMessage.className = 'modal-message error';
-                modalFormMessage.style.display = 'block';
-            }
-            return;
-        }
-
-        if (googleScriptURL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') {
-            if(modalFormMessage) {
-                modalFormMessage.textContent = 'Form submission is not configured. Please set up Google Apps Script.';
-                modalFormMessage.className = 'modal-message error';
-                modalFormMessage.style.display = 'block';
-            }
-            console.error("Google Apps Script URL is not set.");
-            return;
-        }
-
-        if(modalFormMessage) {
-            modalFormMessage.textContent = 'Submitting...';
-            modalFormMessage.className = 'modal-message'; // Reset to default class
-            modalFormMessage.style.display = 'block';
-        }
-
-        fetch(googleScriptURL, {
-            method: 'POST',
-            mode: 'cors', // Required for cross-origin requests to Google Apps Script
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email: email }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                if(modalFormMessage){
-                    if (data.result === 'success') {
-                        modalFormMessage.textContent = 'Thank you! We will notify you and send your promo code soon.';
-                        modalFormMessage.className = 'modal-message success';
-                        if(promoEmailForm) promoEmailForm.reset();
-                        // Optionally close modal after a delay
-                        // setTimeout(closeModal, 3000);
-                    } else {
-                        modalFormMessage.textContent = 'Submission failed. Please try again. ' + (data.message || '');
-                        modalFormMessage.className = 'modal-message error';
-                        console.error('Google Apps Script Error:', data.message);
-                    }
-                }
-            })
-            .catch(error => {
-                if(modalFormMessage) {
-                    modalFormMessage.textContent = 'An error occurred. Please try again later.';
-                    modalFormMessage.className = 'modal-message error';
-                }
-                console.error('Fetch Error:', error);
-            });
+    form.addEventListener('submit', () => {
+        // show spinner, disable button so they can’t double-click
+        spinner.style.display = 'inline-block';
+        form.querySelector('button').disabled = true;
     });
-}
+
+    hiddenIframe.addEventListener('load', () => {
+        // hide spinner, re-enable button
+        spinner.style.display = 'none';
+        form.querySelector('button').disabled = false;
+
+        // your existing “on success” logic:
+        form.reset();
+        closeModal();
+        const msg = document.getElementById('modalFormMessage');
+        msg.textContent = "Thanks! Your code is on its way.";
+        msg.style.display = 'block';
+    });
+});
+
+// Handle form submission
+// if (promoEmailForm) {
+//     promoEmailForm.addEventListener('submit', function(event) {
+//         event.preventDefault(); // Prevent default form submission
+        //
+        // const email = modalEmailInput.value.trim();
+        // if (!email) {
+        //     if(modalFormMessage) {
+        //         modalFormMessage.textContent = 'Please enter a valid email address.';
+        //         modalFormMessage.className = 'modal-message error';
+        //         modalFormMessage.style.display = 'block';
+        //     }
+        //     return;
+        // }
+        //
+        // const googleScriptURL = 'https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec';
+        //
+        //
+        // if(modalFormMessage) {
+        //     modalFormMessage.textContent = 'Submitting...';
+        //     modalFormMessage.className = 'modal-message'; // Reset to default class
+        //     modalFormMessage.style.display = 'block';
+        // }
+        //
+        // fetch(googleScriptURL, {
+//             method: 'POST',
+//             mode: 'no-cors', // Required for cross-origin requests to Google Apps Script
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({ email: email }),
+//         })
+//             .then(response => response.json())
+//             .then(data => {
+//                 if(modalFormMessage){
+//                     if (data.result === 'success') {
+//                         modalFormMessage.textContent = 'Thank you! We will notify you and send your promo code soon.';
+//                         modalFormMessage.className = 'modal-message success';
+//                         if(promoEmailForm) promoEmailForm.reset();
+//                         // Optionally close modal after a delay
+//                         // setTimeout(closeModal, 3000);
+//                     } else {
+//                         modalFormMessage.textContent = 'Submission failed. Please try again. ' + (data.message || '');
+//                         modalFormMessage.className = 'modal-message error';
+//                         console.error('Google Apps Script Error:', data.message);
+//                     }
+//                 }
+//             })
+//             .catch(error => {
+//                 if(modalFormMessage) {
+//                     modalFormMessage.textContent = 'An error occurred. Please try again later.';
+//                     modalFormMessage.className = 'modal-message error';
+//                 }
+//                 console.error('Fetch Error:', error);
+//             });
+//     });
+// }

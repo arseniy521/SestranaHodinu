@@ -304,39 +304,81 @@ border-color: var(--primary-color-light);
     }
 }
 
-/* --- Hero Section --- */
 .hero-section {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Keep flex display to center container2 */
     align-items: center;
     justify-content: center;
-    /* Center content vertically */
     text-align: center;
-    padding-top: 120px;
-    /* Increased padding */
-    padding-bottom: 120px;
-    /*background-color: var(--background);*/
-    /* Removed background from here */
+    padding-top: 80px; /* Adjusted padding for consistency */
+    padding-bottom: 80px; /* Adjusted padding for consistency */
 }
-
+#dynamic-text {
+    display: inline-block; /* so width rules apply */
+    min-width: 20ch; /* reserve space for ~20 characters */
+}
+.container2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default for mobile */
+    align-items: center; /* Center items horizontally in the column layout */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%; /* Ensure container2 takes full width on mobile */
+}
 
 .hero-content {
     max-width: 600px;
-    /* Increased max-width */
-    margin-bottom: 60px;
-    /* Increased margin */
-    text-align: left;
-    /* Align text to the left */
+    margin-bottom: 40px;
+    text-align: center; /* Center text on mobile */
 }
 
 .hero-image {
     width: 100%;
-    max-width: 600px;
-    /* Increased max-width */
+    max-width: 500px; /* Adjusted max-width for mobile image */
     margin-top: 20px;
 }
 
-/* --- Services Section --- */
+.hero-text-container {
+    min-height: 200px; /* Adjust this value as needed to accommodate the longest text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content within the container */
+}
+
+.hero-content h1 {
+    margin-bottom: 10px; /* Reduce bottom margin for tighter spacing */
+}
+
+.hero-content p {
+    margin-bottom: 20px; /* Add space between paragraph and button */
+}
+
+@media (min-width: 769px) {
+    .hero-section {
+        padding-top: 120px; /* Restore larger padding for desktop */
+        padding-bottom: 120px; /* Restore larger padding for desktop */
+    }
+
+    .container2 {
+        flex-direction: row; /* Arrange items in a row for larger screens */
+        justify-content: space-between; /* Distribute space between items */
+        align-items: center; /* Align items vertically in the row */
+    }
+
+    .hero-content {
+        margin-bottom: 60px;
+        text-align: left; /* Align text to the left on desktop */
+    }
+
+    .hero-image {
+        margin-top: 0;
+        margin-left: 40px;
+        max-width: 600px; /* Restore larger max-width for desktop image */
+    }
+}
+
+
+        /* --- Services Section --- */
 .services-section {
     /*background-color: var(--white);*/
     /* Removed background from here */
@@ -408,6 +450,22 @@ border-color: var(--primary-color-light);
     color: var(--text-color);
     font-size: 16px;
     line-height: 28px;
+}
+
+/* --- spiner --- */
+.spinner {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: 5px solid rgba(0,0,0,0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    vertical-align: middle;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 /* --- Location Section --- */
@@ -816,7 +874,7 @@ border-color: var(--primary-color-light);
     height: 365px;
     object-fit: cover;
     object-position: center;
-    
+
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -1208,9 +1266,9 @@ footer::before {
         gap: 20px;
     }
 
-    .hero-content {
-        max-width: 500px;
-    }
+    /*.hero-content {*/
+    /*    max-width: 500px;*/
+    /*}*/
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1240,10 +1298,10 @@ footer::before {
         /* Hide nav links on small screens */
     }
 
-    .hero-section {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+    /*.hero-section {*/
+    /*    padding-top: 80px;*/
+    /*    padding-bottom: 80px;*/
+    /*}*/
 
     h1 {
         font-size: 36px;

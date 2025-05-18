@@ -8,6 +8,7 @@
     <!-- Google Fonts preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
             href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap"
@@ -26,41 +27,41 @@
     </script>
 </head>
 <body>
-<header>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <div class="logo-icon">S</div>
-                <div class="logo-text">Sestra na Hodinu</div>
-            </div>
-            <!-- Language switcher -->
-            <div class="language-switcher">
-                <select id="lang-select" onchange="switchLanguage(this.value)">
-                    <option value="index.html">English</option>
-                    <option value="index-cs.html">Čeština</option>
-                    <option value="index-ru.html" selected>Русский</option>
-                    <option value="index-uk.html">Українська</option>
-                </select>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#workflow">Как это работает</a></li>
-                <!-- Testimonials & Articles hidden to match English -->
-                <li><a href="#pricing">Цены</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-            <div class="mobile-nav">
-                <a href="#home">Главная</a>
-                <a href="#services">Услуги</a>
-                <a href="#workflow">Как это работает</a>
-                <a href="#pricing">Цены</a>
-            </div>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">S</div>
+                    <div class="logo-text">Sestra na Hodinu</div>
+                </div>
+                <!-- Language switcher -->
+                <div class="language-switcher">
+                    <select id="lang-select" onchange="switchLanguage(this.value)">
+                        <option value="index.html">English</option>
+                        <option value="index-cs.html">Čeština</option>
+                        <option value="index-ru.html" selected>Русский</option>
+                        <option value="index-uk.html">Українська</option>
+                    </select>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#workflow">Как это работает</a></li>
+                    <!-- Testimonials & Articles hidden to match English -->
+                    <li><a href="#pricing">Цены</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="mobile-nav">
+                    <a href="#home">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#workflow">Как это работает</a>
+                    <a href="#pricing">Цены</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 <main>
     <!-- Hero Section -->
@@ -68,7 +69,7 @@
         <div class="container2">
             <div class="hero-content">
                 <h1>
-                    <span id="dynamic-text">Назначенные капельницы</span> с выездом медсестры на дом.
+                    <span id="dynamic-text">Лечение</span> с выездом медсестры на дом.
                 </h1>
                 <p>Быстрая, надежная и профессиональная медицинская помощь в комфортных условиях вашего дома.</p>
                 <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Вызвать медсестру</a>
@@ -77,222 +78,231 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title">Наши услуги</h2>
-            <p class="section-description">
-                Предлагаем широкий спектр медицинских услуг на дому от квалифицированных медсестер. Выбирайте нужный вариант, и мы оперативно организуем выезд.
-            </p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><img src="icon_resized_2.png" alt="Капельницы"></div>
-                    <h3 class="service-title">Назначенная капельница</h3>
-                    <p class="service-description">
-                        Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><img src="icon_resized_1.png" alt="Витаминная капельница"></div>
-                    <h3 class="service-title">Витаминная капельница</h3>
-                    <p class="service-description">
-                        Пополнение запасов витаминов и минералов для повышения иммунитета и энергии.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><img src="icon_resized_3.png" alt="Внутримышечные инъекции"></div>
-                    <h3 class="service-title">Внутримышечные инъекции</h3>
-                    <p class="service-description">
-                        Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><img src="inject.png" alt="Подкожные инъекции"></div>
-                    <h3 class="service-title">Подкожные инъекции</h3>
-                    <p class="service-description">
-                        Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><img src="massage.png" alt="Терапевтический массаж"></div>
-                    <h3 class="service-title">Терапевтический массаж</h3>
-                    <p class="service-description">
-                        Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><img src="surfe.png" alt="Спортивный массаж"></div>
-                    <h3 class="service-title">Спортивный массаж</h3>
-                    <p class="service-description">
-                        Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Workflow Section -->
-    <section id="workflow" class="workflow-section">
-        <div class="container">
-            <div class="workflow-content">
-                <h2 class="section-title">Как это работает</h2>
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
                 <p class="section-description">
-                    Мы предлагаем простой и удобный процесс без излишних формальностей. Просто оформите заявку, дождитесь подтверждения и медсестра приедет к вам.
+                    Предлагаем широкий спектр медицинских услуг на дому от квалифицированных медсестер. Выбирайте нужный вариант, и мы оперативно организуем выезд.
                 </p>
-                <div class="workflow-image">
-                    <img src="workflow1.png" alt="Схема работы">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><img src="icon_resized_2.png" alt="Капельницы"></div>
+                        <h3 class="service-title">Назначенная капельница</h3>
+                        <p class="service-description">
+                            Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="icon_resized_1.png" alt="Витаминная капельница"></div>
+                        <h3 class="service-title">Витаминная капельница</h3>
+                        <p class="service-description">
+                            Пополнение запасов витаминов и минералов для повышения иммунитета и энергии.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="icon_resized_3.png" alt="Внутримышечные инъекции"></div>
+                        <h3 class="service-title">Внутримышечные инъекции</h3>
+                        <p class="service-description">
+                            Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="inject.png" alt="Подкожные инъекции"></div>
+                        <h3 class="service-title">Подкожные инъекции</h3>
+                        <p class="service-description">
+                            Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="massage.png" alt="Терапевтический массаж"></div>
+                        <h3 class="service-title">Терапевтический массаж</h3>
+                        <p class="service-description">
+                            Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="surfe.png" alt="Спортивный массаж"></div>
+                        <h3 class="service-title">Спортивный массаж</h3>
+                        <p class="service-description">
+                            Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Nurses Section -->
-    <section id="nurses" class="nurses-section">
-        <div class="container">
-            <h2 class="section-title">Наши медсестры</h2>
-            <p class="section-description">
-                Профессионалы с большим опытом, готовые помочь вам в любой ситуации.
-            </p>
-            <div class="nurses-grid">
-                <div class="nurse-card">
-                    <img src="freepik__adjust__95206.png" alt="Азбета Новотна" class="nurse-image">
-                    <h3 class="nurse-name">Азбета Новотна</h3>
-                    <p class="nurse-role">Старшая медсестра</p>
-                    <p class="nurse-description">
-                        Более 15 лет проработала в детской онкологии в больнице Мотол.
-                        Специализируется на педиатрическом уходе и изучает онкологию.
-                        Опыт работы на общественных мероприятиях.
+        <!-- Workflow Section -->
+        <section id="workflow" class="workflow-section">
+            <div class="container">
+                <div class="workflow-content">
+                    <h2 class="section-title">Как это работает</h2>
+                    <p class="section-description">
+                        Мы предлагаем простой и удобный процесс без излишних формальностей. Просто оформите заявку, дождитесь подтверждения и медсестра приедет к вам.
                     </p>
-                </div>
-                <div class="nurse-card">
-                    <img src="ivana.jpg" alt="Яна Кралова" class="nurse-image">
-                    <h3 class="nurse-name">Яна Кралова</h3>
-                    <p class="nurse-role">Медсестра на выезд</p>
-                    <p class="nurse-description">
-                        10 лет в отделении внутренней медицины Томаяровой больницы.
-                        Спокойная, терпеливая и эмпатичная в домашнем уходе.
-                    </p>
-                </div>
-                <div class="nurse-card">
-                    <img src="freepik__adjust__87469.jpeg" alt="Томаш Дворжак" class="nurse-image">
-                    <h3 class="nurse-name">Томаш Дворжак</h3>
-                    <p class="nurse-role">Медбрат неотложки</p>
-                    <p class="nurse-description">
-                        8 лет в приемном покое, выпускник Карлова университета, эксперт по кризисным ситуациям.
-                    </p>
+                    <div class="workflow-image">
+                        <img src="workflow1.png" alt="Схема работы">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing-section">
-        <h2 class="section-title">Наши цены</h2>
-        <p class="section-description">Прозрачные условия без скрытых платежей.</p>
-        <table class="pricing-table">
-            <thead>
-            <tr>
-                <th>Услуга</th>
-                <th>Цена (1-я услуга)</th>
-                <th>Доп. услуга (-30%)</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Внутримышечная инъекция (витамины, антибиотики)</td>
-                <td>699 CZK</td>
-                <td>499 CZK <span class="discount">(-30%)</span></td>
-            </tr>
-            <tr>
-                <td>Подкожная инъекция (инсулин)</td>
-                <td>699 CZK</td>
-                <td>499 CZK <span class="discount">(-30%)</span></td>
-            </tr>
-            <tr>
-                <td>Стандартная капельница (IV)</td>
-                <td>1 199 CZK</td>
-                <td>849 CZK <span class="discount">(-30%)</span></td>
-            </tr>
-            <tr>
-                <td>Капельница (с вашими препаратами)</td>
-                <td>1 499 CZK</td>
-                <td>1 049 CZK <span class="discount">(-30%)</span></td>
-            </tr>
-            </tbody>
-        </table>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="#services" class="button secondary">Подробнее</a>
-        </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location" class="location-section">
-        <div class="container">
-            <div class="location-content">
-                <div class="location-map">
-                    <img src="map.png" alt="Карта Праги">
+        <!-- Nurses Section -->
+        <section id="nurses" class="nurses-section">
+            <div class="container">
+                <h2 class="section-title">Наши медсестры</h2>
+                <p class="section-description">
+                    Профессионалы с большим опытом, готовые помочь вам в любой ситуации.
+                </p>
+                <div class="nurses-grid">
+                    <div class="nurse-card">
+                        <img src="freepik__adjust__95206.png" alt="Азбета Новотна" class="nurse-image">
+                        <h3 class="nurse-name">Азбета Новотна</h3>
+                        <p class="nurse-role">Старшая медсестра</p>
+                        <p class="nurse-description">
+                            Более 15 лет проработала в детской онкологии в больнице Мотол.
+                            Специализируется на педиатрическом уходе и изучает онкологию.
+                            Опыт работы на общественных мероприятиях.
+                        </p>
+                    </div>
+                    <div class="nurse-card">
+                        <img src="ivana.jpg" alt="Яна Кралова" class="nurse-image">
+                        <h3 class="nurse-name">Яна Кралова</h3>
+                        <p class="nurse-role">Медсестра на выезд</p>
+                        <p class="nurse-description">
+                            10 лет в отделении внутренней медицины Томаяровой больницы.
+                            Спокойная, терпеливая и эмпатичная в домашнем уходе.
+                        </p>
+                    </div>
+                    <div class="nurse-card">
+                        <img src="freepik__adjust__87469.jpeg" alt="Томаш Дворжак" class="nurse-image">
+                        <h3 class="nurse-name">Томаш Дворжак</h3>
+                        <p class="nurse-role">Медбрат неотложки</p>
+                        <p class="nurse-description">
+                            8 лет в приемном покое, выпускник Карлова университета, эксперт по кризисным ситуациям.
+                        </p>
+                    </div>
                 </div>
-                <div class="location-details">
-                    <h1 class="section-title">Работаем в районе Праги</h1>
-                    <ul class="location-bullets">
-                        <li>Быстрая и доступная медицинская помощь по вашему адресу.</li>
-                        <li>Профессиональные медсестры доступны 7 дней в неделю.</li>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">Наши цены</h2>
+            <p class="section-description">Прозрачные условия без скрытых платежей.</p>
+            <table class="pricing-table">
+                <thead>
+                <tr>
+                    <th>Услуга</th>
+                    <th>Цена (1-я услуга)</th>
+                    <th>Доп. услуга (-30%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Внутримышечная инъекция (витамины, антибиотики)</td>
+                    <td>699 CZK</td>
+                    <td>499 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>Подкожная инъекция (инсулин)</td>
+                    <td>699 CZK</td>
+                    <td>499 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>Стандартная капельница (IV)</td>
+                    <td>1 199 CZK</td>
+                    <td>849 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>Капельница (с вашими препаратами)</td>
+                    <td>1 499 CZK</td>
+                    <td>1 049 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#services" class="button secondary">Подробнее</a>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location-section">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-map">
+                        <img src="map.png" alt="Карта Праги">
+                    </div>
+                    <div class="location-details">
+                        <h1 class="section-title">Работаем в районе Праги</h1>
+                        <ul class="location-bullets">
+                            <li>Быстрая и доступная медицинская помощь по вашему адресу.</li>
+                            <li>Профессиональные медсестры доступны 7 дней в неделю.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links-column">
+                    <h3>О компании</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#nurses">Наша команда</a></li>
+                        <li><a href="#">Приложение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Регион</h3>
+                    <ul>
+                        <li><a href="#location">Прага</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Помощь</h3>
+                    <ul>
+                        <li><a href="#">Центр поддержки</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Инструкция</a></li>
+                        <li><a href="#workflow">Как это работает</a></li>
                     </ul>
                 </div>
             </div>
+            <p class="copyright">
+                © Sestra na Hodinu 2025. Все права защищены.
+            </p>
         </div>
-    </section>
-</main>
+    </footer>
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-links-column">
-                <h3>О компании</h3>
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#testimonials">Отзывы</a></li>
-                    <li><a href="#nurses">Наша команда</a></li>
-                    <li><a href="#">Приложение</a></li>
-                </ul>
-            </div>
-            <div class="footer-links-column">
-                <h3>Регион</h3>
-                <ul>
-                    <li><a href="#location">Прага</a></li>
-                </ul>
-            </div>
-            <div class="footer-links-column">
-                <h3>Помощь</h3>
-                <ul>
-                    <li><a href="#">Центр поддержки</a></li>
-                    <li><a href="#">Связаться с нами</a></li>
-                    <li><a href="#">Инструкция</a></li>
-                    <li><a href="#workflow">Как это работает</a></li>
-                </ul>
+    <!-- Order Nurse Modal -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <div id="orderNurseModal" class="modal-overlay">
+        <div class="form-container">
+            <div class="modal-content">
+                <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
+                <h1>Скоро открываемся!</h1>
+                <h2>Получите эксклюзивную <strong>50% скидку</strong> на первый заказ!</h2>
+                <p>Мы вышлем вам уникальный промо-код на почту.</p>
+                    <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="hidden_iframe" id="promoEmailForm">
+                        <label for="modalEmailInput"></label>
+                        <input type="email" id="modalEmailInput" name="name" placeholder="ваш@email.ру" required>
+                        <button type="submit" class="button" id="submitBtn">
+                            <span class="btn-text">Получить код</span>
+                            <div id="loadingSpinner" class="spinner"></div>
+                        </button>
+                    </form>
+                <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
             </div>
         </div>
-        <p class="copyright">
-            © Sestra na Hodinu 2025. Все права защищены.
-        </p>
     </div>
-</footer>
 
-<!-- Order Nurse Modal -->
-<div id="orderNurseModal" class="modal-overlay">
-    <div class="modal-content">
-        <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
-        <h1>Скоро открываемся!</h1>
-        <h2>Получите эксклюзивную <strong>50% скидку</strong> на первый заказ!</h2>
-        <p>Мы вышлем вам уникальный промо-код на почту.</p>
-        <form id="promoEmailForm">
-            <input type="email" id="modalEmailInput" name="email" placeholder="ваш@email.ру" required>
-            <button type="submit" class="button">Получить код</button>
-        </form>
-        <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
-    </div>
-</div>
-
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
+
