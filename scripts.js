@@ -204,6 +204,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const root      = document.documentElement;
+
+    // initialize from localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    root.setAttribute('data-theme', savedTheme);
+    updateButtonText(savedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+        // flip between "light" and "dark"
+        const newTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateButtonText(newTheme);
+    });
+
+    function updateButtonText(theme) {
+        toggleBtn.textContent = theme === 'dark'
+            ? '☀️ Light Mode'
+            : '🌓 Dark Mode';
+    }
+});
+
 // Handle form submission
 // if (promoEmailForm) {
 //     promoEmailForm.addEventListener('submit', function(event) {
