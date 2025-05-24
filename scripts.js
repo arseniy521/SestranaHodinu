@@ -12,25 +12,39 @@ const translations = {
         "Vitamin Injections"
     ],
     cs: [
+        "Předepsané léky",
         "Předepsané infuze",
         "Předepsané injekce",
         "Antibiotická terapie",
         "Vitamínové injekce"
     ],
     ru: [
+        "Назначенные лекарства",
         "Капельницы",
         "Инъекции",
         "Антибиотики",
         "Витаминные уколы"
+
     ],
     uk: [
+        "Призначені ліки",
         "Крапельниці",
-        "ін'єкції",
+        "Ін'єкції",
         "Антибіотикотерапія",
-        "Вітамінні Крапельниці"
+        "Вітамінні Ін'єкції"
     ]
 };
-const lang = document.documentElement.lang || 'en';
+let lang = document.documentElement.lang || 'en';
+
+if (!translations[lang]) {
+    // Fallback: try to determine language from URL path
+    const path = window.location.pathname;
+    if (path.includes('/ru/')) lang = 'ru';
+    else if (path.includes('/uk/')) lang = 'uk';
+    else if (path.includes('/en/')) lang = 'en';
+    else lang = 'cs'; // Default to Czech if no language found
+}
+
 const phrases = translations[lang] || translations.en;
 // const phrases = ["Prescribed Medication", "Prescribed IV Drips", "Prescribed Injections", "Antibiotic Therapy", "Vitamin Injections"];
 const dynamicText = document.getElementById("dynamic-text");

@@ -1,31 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Sestra na Hodinu | Domácí zdravotní péče v Praze</title>
+    <meta name="description" content="Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péči v Praze: IV infuze, injekce, masáže a další služby přímo u vás doma.">
+    <meta name="keywords" content="domácí zdravotní péče, sestra na hodinu, IV infuze, domácí injekce, masáže Praha">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="cs">
+    <link rel="canonical" href="https://www.sestranahodinu.cz/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sestra na Hodinu | Domácí zdravotní péče v Praze">
+    <meta property="og:description" content="Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péči v Praze: IV infuze, injekce a masáže přímo u vás doma.">
+    <meta property="og:url" content="https://www.sestranahodinu.cz/">
+    <meta property="og:site_name" content="Sestra na Hodinu">
+    <meta property="og:image" content="https://www.sestranahodinu.cz/img/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sestra na Hodinu | Domácí zdravotní péče v Praze">
+    <meta name="twitter:description" content="Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péči v Praze: IV infuze, injekce a masáže přímo u vás doma.">
+    <meta name="twitter:image" content="https://www.sestranahodinu.cz/img/og-image.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Sestra na Hodinu",
+            "url": "https://www.sestranahodinu.cz/",
+            "logo": "https://www.sestranahodinu.cz/img/logo.png",
+            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+            "description": "Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péči v Praze: IV infuze, injekce a masáže přímo u vás doma.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Praha",
+                "addressCountry": "CZ"
+            },
+            "telephone": "+420773629123",
+            "areaServed": "Praha",
+            "sameAs": [
+                "https://www.sestranahodinu.cz/en/",
+                "https://www.sestranahodinu.cz/ru/",
+                "https://www.sestranahodinu.cz/uk/"
+            ],
+            "availableLanguage": ["Čeština", "Angličtina", "Ruština", "Ukrajinština"],
+            "priceRange": "699-1499 CZK",
+            "medicalSpecialty": ["Ošetřovatelství", "Domácí zdravotní péče"],
+            "serviceType": [
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Předepsaná IV infuze",
+                    "description": "Podaná dle lékařského předpisu pod odborným dohledem, určená pro specifické diagnózy."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Vitaminová IV infuze",
+                    "description": "Doplňuje vitaminy, hydrataci a živiny přímo do krevního oběhu pro rychlejší účinek."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Intramuskulární injekce",
+                    "description": "Podání antibiotik, vitaminů či hormonů přímo do svalu – rychlé a efektivní řešení."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Subkutánní injekce",
+                    "description": "Aplikace léků (např. inzulin, antikoagulancia) pod kůži s minimálním diskomfortem."
+                },
+                {
+                    "@type": "MedicalTherapy",
+                    "name": "Terapeutická masáž",
+                    "description": "Úleva od bolesti, rehabilitace a snížení stresu díky odborně vedené masáži."
+                },
+                {
+                    "@type": "MedicalTherapy",
+                    "name": "Sportovní masáž",
+                    "description": "Pro sportovce všech úrovní – zvýšení výkonu, rychlejší regenerace a prevence zranění."
+                }
+            ]
+        }
+    </script>
+
+    <!-- Google Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link
-            href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap"
-            rel="stylesheet"
-    />
-    <title>Sestra na Hodinu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap" rel="stylesheet">
+
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/">
+    <link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/">
+    <link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/">
+    <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VXT0FR7KH1');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VXT0FR7KH1');
-</script>
-
 <body>
     <header>
         <div class="container">
@@ -34,23 +120,21 @@
                     <div class="logo-icon">S</div>
                     <div class="logo-text">Sestra na Hodinu</div>
                 </div>
-                <!-- Add this to your navigation menu -->
                 <!-- Jazykový přepínač -->
                 <div class="language-switcher">
                     <select id="lang-select" onchange="switchLanguage(this.value)">
-                    <option value="index.html" selected>English</option>
-                    <option value="index-cs.html">Čeština</option>
-                    <option value="index-ru.html">Русский</option>
-                    <option value="index-uk.html">Українська</option>
+                        <option value="/" selected>Čeština</option>
+                        <option value="/en/">English</option>
+                        <option value="/ru/">Русский</option>
+                        <option value="/uk/">Українська</option>
                     </select>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#workflow">Workflow</a></li>
-<!--                    <li><a href="#testimonials">Testimonials</a></li>-->
-                    <li><a href="#pricing">Pricing</a></li>
-<!--                    <li><a href="articles.html">Articles</a></li>-->
+                    <li><a href="#home">Domů</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#workflow">Jak to funguje</a></li>
+                    <!-- Testimonials & Articles hidden to match English -->
+                    <li><a href="#pricing">Ceník</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -58,278 +142,249 @@
                     <span></span>
                 </div>
                 <div class="mobile-nav">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#workflow">Workflow</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="articles.html">Articles</a>
+                    <a href="#home">Domů</a>
+                    <a href="#services">Služby</a>
+                    <a href="#workflow">Jak to funguje</a>
+                    <a href="#pricing">Ceník</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="container2">
                 <div class="hero-content">
-                    <!-- <h1>Same-Day Nurse Booking
-                        at Your Doorstep</h1> -->
                     <h1>
-                        <span id="dynamic-text">Prescribed IV Drips</span> performed by a nurse in your home.
+                        <span id="dynamic-text">Předepsané infuze</span> zajištěné sestrou u vás doma.
                     </h1>
-                    <!-- <h1>Prescribed Injections performed by a nurse in your home.</h1> -->
-                    <p>Fast, reliable, and professional healthcare at home.</p>
-                    <a href="#" id="openOrderNurseModalBtn" class="button">Order Nurse</a>
+                    <p>Rychlá, spolehlivá a profesionální zdravotní péče v pohodlí vašeho domova.</p>
+                    <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Objednat sestru</a>
                 </div>
-                <img src="drips_cl2.png" alt="Healthcare Illustration" class="hero-image">
+                <img src="img/drips_cl2.png" alt="Profesionální zdravotní sestra podává infuzi pacientovi v domácím prostředí v Praze" class="hero-image">
             </div>
         </section>
 
+        <!-- Services Section -->
         <section id="services" class="services-section">
             <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">We provide to you the best choices for you. Adjust it to your health
-                    needs and make sure your undergo treatment with our highly qualified doctors.</p>
+                <h2 class="section-title">Naše služby</h2>
+                <p class="section-description">
+                    Přinášíme širokou nabídku domácích zdravotnických služeb, prováděných zkušenými sestrami. Vyberte si, co potřebujete, a my se postaráme o zbytek.
+                </p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <img src="icon_resized_2.png" alt="IV Drips">
-                        </div>
-                        <h3 class="service-title">Prescribed IV Drip</h3>
-                        <p class="service-description"> Administered based on your doctor’s prescription under
-                            professional supervision to treat specific conditions.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="icon_resized_1.png" alt="Vitamin">
-                        </div>
-                        <h3 class="service-title">Vitamin IV Drip</h3>
-                        <p class="service-description">Intravenous fluids, vitamins, and medications for various health
-                            needs.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="icon_resized_3.png" alt="Injections">
-                        </div>
-                        <h3 class="service-title">Intramuscular Injection</h3>
-                        <p class="service-description">Administration of prescribed medication—ideal for antibiotics,
-                            vitamins, or hormonal therapy.
+                        <div class="service-icon"><img src="img/icon_resized_2.png" alt="Ikona lékařské infuze"></div>
+                        <h3 class="service-title">Předepsaná IV infuze</h3>
+                        <p class="service-description">
+                            Podaná dle lékařského předpisu pod odborným dohledem, určená pro specifické diagnózy.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <img src="inject.png" alt="Injections">
-                        </div>
-                        <h3 class="service-title">Subcutaneous Injection</h3>
-                        <p class="service-description">Effective delivery of prescribed medications like insulin or
-                            anticoagulants.
+                        <div class="service-icon"><img src="img/icon_resized_1.png" alt="Ikona vitaminové infuze"></div>
+                        <h3 class="service-title">Vitaminová IV infuze</h3>
+                        <p class="service-description">
+                            Doplňuje vitaminy, hydrataci a živiny přímo do krevního oběhu pro rychlejší účinek.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <img src="massage.png" alt="Therapeutic Massage">
-                        </div>
-                        <h3 class="service-title">Therapeutic Massage</h3>
-                        <p class="service-description">Massage therapy to manage pain, rehabilitate injuries, and reduce
-                            stress.</p>
+                        <div class="service-icon"><img src="img/icon_resized_3.png" alt="Ikona intramuskulární injekce"></div>
+                        <h3 class="service-title">Intramuskulární injekce</h3>
+                        <p class="service-description">
+                            Podání antibiotik, vitaminů či hormonů přímo do svalu – rychlé a efektivní řešení.
+                        </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <img src="surfe.png" alt="Sport Massage">
-                        </div>
-                        <h3 class="service-title">Sport Massage</h3>
-                        <p class="service-description">Specialized massage for athletes to enhance performance and
-                            recovery.</p>
+                        <div class="service-icon"><img src="img/inject.png" alt="Ikona subkutánní injekce"></div>
+                        <h3 class="service-title">Subkutánní injekce</h3>
+                        <p class="service-description">
+                            Aplikace léků (např. inzulin, antikoagulancia) pod kůži s minimálním diskomfortem.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="img/massage.png" alt="Ikona terapeutické masáže"></div>
+                        <h3 class="service-title">Terapeutická masáž</h3>
+                        <p class="service-description">
+                            Úleva od bolesti, rehabilitace a snížení stresu díky odborně vedené masáži.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><img src="img/surfe.png" alt="Ikona sportovní masáže"></div>
+                        <h3 class="service-title">Sportovní masáž</h3>
+                        <p class="service-description">
+                            Pro sportovce všech úrovní – zvýšení výkonu, rychlejší regenerace a prevence zranění.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- Workflow Section -->
         <section id="workflow" class="workflow-section">
             <div class="container">
                 <div class="workflow-content">
-                    <h2 class="section-title">Our Workflow</h2>
-                    <p class="section-description">Our dedicated patient engagement app and web portal allow you to
-                        access information instantaneously (no tedious form, long calls, or administrative hassle) and
-                        securely.</p>
+                    <h2 class="section-title">Jak to funguje</h2>
+                    <p class="section-description">
+                        Náš systém je navržen tak, aby byl jednoduchý a bez zbytečné administrativy. Stačí objednat, vyčkat na potvrzení termínu a sestra dorazí přímo k vám.
+                    </p>
                     <div class="workflow-image">
-                        <img src="workflow1.png" alt="Workflow Illustration">
+                        <img src="img/workflow1.png" alt="Diagram pracovního postupu služby Sestra na Hodinu">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Nurses Section -->
         <section id="nurses" class="nurses-section">
             <div class="container">
-                <h2 class="section-title">Meet Our Nurses</h2>
-                <p class="section-description">Our team of professional and experienced nurses is here to provide you
-                    with the best care possible.</p>
+                <h2 class="section-title">Seznamte se s našimi sestrami</h2>
+                <p class="section-description">Náš tým tvoří zdravotní sestry s dlouholetou praxí z různých oborů.</p>
                 <div class="nurses-grid">
                     <div class="nurse-card">
-                        <img src="IMG_7233.jpg" alt="Nurse Anna" class="nurse-image">
+                        <img src="img/IMG_7233.jpg" alt="Azbeta Novotná" class="nurse-image">
                         <h3 class="nurse-name">Nigina Jebrak</h3>
-                        <p class="nurse-role">Managing Nurse</p>
-                        <p class="nurse-description">With unwavering dedication to patient care, Nigina Jebrak stands as our most senior nurse, celebrated for her clinical acumen and visionary leadership. Prior to joining Sestra na hodinu, Nigina excelled as the Managing Nurse at one of Prague’s premier dental clinics.</p>
+                        <p class="nurse-role">Vedoucí sestra</p>
+                        <p class="nurse-description">
+                            S neochvějnou oddaností péči o pacienty je Nigina Jebrak naší nejzkušenější sestrou, oceňovanou za klinickou erudici a vizionářské vedení. Před nástupem do Sestra na hodinu působila jako vrchní sestra na jedné z předních stomatologických klinik v Praze.                        </p>
                     </div>
                     <div class="nurse-card">
-                        <img src="ivana.jpg" alt="Jana Králová" class="nurse-image">
+                        <img src="img/ivana.jpg" alt="Jana Králová" class="nurse-image">
                         <h3 class="nurse-name">Jana Králová</h3>
-                        <p class="nurse-role">Pediatric Nurse</p>
-                        <p class="nurse-description">She spent 10 years working in internal medicine at Thomayer
-                            Hospital, where she gained deep knowledge in managing chronic and acute conditions.
-                            She has also supported patients in hospice settings and brings a calm, reassuring presence
-                            to every home visit.</p>
+                        <p class="nurse-role">Domácí sestra</p>
+                        <p class="nurse-description">
+                            10 let pracovala na interním oddělení v Thomayerově nemocnici, kde se věnovala péči o akutní i chronické pacienty.
+                            Je velmi klidná, trpělivá a empatická, což ocení klienti při domácí péči.
+                        </p>
                     </div>
                     <div class="nurse-card">
-                        <img src="freepik__adjust__87469.jpeg" alt="Nurse Emily" class="nurse-image">
+                        <img src="img/freepik__adjust__87469.jpeg" alt="Tomáš Dvořák" class="nurse-image">
                         <h3 class="nurse-name">Tomáš Dvořák</h3>
-                        <p class="nurse-role">Emergency Nurse</p>
-                        <p class="nurse-description">He is an experienced nurse with a strong background in emergency
-                            care.
-                            He worked for 8 years in emergency departments, where he handled critical situations with
-                            speed and precision. Tomáš studied nursing at Charles University.
+                        <p class="nurse-role">Sestra urgentního příjmu</p>
+                        <p class="nurse-description">
+                            8 let zkušeností z urgentního příjmu, vystudoval Karlovu Univerzitu a je expertem na krizové situace.
+                            Jeho rychlé reakce a odborné znalosti jsou neocenitelné v akutní domácí péči.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- Pricing Section -->
         <section id="pricing" class="pricing-section">
-            <h2 class="section-title">Our Pricing Policy</h2>
-            <p class="section-description">Transparent and fair pricing policy without hidden fees</p>
+            <h2 class="section-title">Náš ceník</h2>
+            <p class="section-description">Transparentní ceny bez skrytých poplatků.</p>
             <table class="pricing-table">
                 <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Price (1st Service)</th>
-                        <th>Add-on Service (-30%)</th>
-                    </tr>
+                <tr>
+                    <th>Služba</th>
+                    <th>Cena (1. služba)</th>
+                    <th>Další služba (-30%)</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-title="Service">Intramuscular Injection (e.g., Vitamin B, antibiotics)</td>
-                        <td data-title="Price (1st Service)">699 CZK</td>
-                        <td data-title="Add-on Service (-30%)">499 CZK <span class="discount">(-30%)</span></td>
-                    </tr>
-                    <tr>
-                        <td data-title="Service">Subcutaneous Injection (e.g., insulin)</td>
-                        <td data-title="Price (1st Service)">699 CZK</td>
-                        <td data-title="Add-on Service (-30%)">499 CZK <span class="discount">(-30%)</span></td>
-                    </tr>
-                    <tr>
-                        <td data-title="Service">IV Drip (Standard)</td>
-                        <td data-title="Price (1st Service)">1,199 CZK</td>
-                        <td data-title="Add-on Service (-30%)">849 CZK <span class="discount">(-30%)</span></td>
-                    </tr>
-                    <tr>
-                        <td data-title="Service">IV Drip (Custom) (You provide medication)</td>
-                        <td data-title="Price (1st Service)">1,499 CZK</td>
-                        <td data-title="Add-on Service (-30%)">1,049 CZK <span class="discount">(-30%)</span></td>
-                    </tr>
+                <tr>
+                    <td>Intramuskulární injekce (např. vitaminy, antibiotika)</td>
+                    <td>699 CZK</td>
+                    <td>499 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>Subkutánní injekce (např. inzulin)</td>
+                    <td>699 CZK</td>
+                    <td>499 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>IV infuze (standardní)</td>
+                    <td>1 199 CZK</td>
+                    <td>849 CZK <span class="discount">(-30%)</span></td>
+                </tr>
+                <tr>
+                    <td>IV infuze (vlastní lék)</td>
+                    <td>1 499 CZK</td>
+                    <td>1 049 CZK <span class="discount">(-30%)</span></td>
+                </tr>
                 </tbody>
             </table>
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#services" class="button secondary">Learn more</a>
+                <a href="#services" class="button secondary">Zjistit více</a>
             </div>
         </section>
 
-        <!-- <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <h2 class="section-title">What people are saying about home healthcare</h2>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">“Our dedicated patient engagement app and web portal allow you to access
-                        information instantaneously (no tedious form, long calls, or administrative hassle) and
-                        securely.”</p>
-                    <p class="testimonial-author">Edward Newgate</p>
-                </div>
-                <div class="slider-navigation">
-                    <button class="slider-button prev-button">&#8592;</button>
-                    <div class="slider-dots">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <button class="slider-button next-button">&#8594;</button>
-                </div>
-            </div>
-        </section> -->
-
+        <!-- Location Section -->
         <section id="location" class="location-section">
             <div class="container">
                 <div class="location-content">
                     <div class="location-map">
-                        <img src="map.png" alt="Location Map">
+                        <img src="img/map.png" alt="Mapa oblasti služeb v Praze">
                     </div>
                     <div class="location-details">
-                        <h1 class="section-title">We Operate in Prague Area</h1>
+                        <h1 class="section-title">Působíme v oblasti Prahy</h1>
                         <ul class="location-bullets">
-                            <right>
-                                <li>Fast and reliable healthcare services.</li>
-                                <li>Professional nurses available 24/7.</li>
-                            </right>
+                            <li>Rychlá a dostupná péče přímo ve vašem bydlišti.</li>
+                            <li>Profesionální sestry k dispozici 7 dní v týdnu.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links-column">
-                    <h3>Company</h3>
+                    <h3>Společnost</h3>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Find a doctor</a></li>
-                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">O nás</a></li>
+                        <li><a href="#testimonials">Hodnocení</a></li>
+                        <li><a href="#nurses">Náš tým</a></li>
+                        <li><a href="#">Aplikace</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-column">
-                    <h3>Region</h3>
+                    <h3>Oblast</h3>
                     <ul>
-                        <li><a href="#">Prague</a></li>
+                        <li><a href="#location">Praha</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-column">
-                    <h3>Help</h3>
+                    <h3>Pomoc</h3>
                     <ul>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact support</a></li>
-                        <li><a href="#">Instructions</a></li>
-                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Centrum nápovědy</a></li>
+                        <li><a href="#">Kontaktujte nás</a></li>
+                        <li><a href="#">Návod</a></li>
+                        <li><a href="#workflow">Jak to funguje</a></li>
                     </ul>
                 </div>
             </div>
-            <p class="copyright">©Sestra na Hodinu 2025. All rights reserved</p>
+            <p class="copyright">
+                © Sestra na Hodinu 2025. Všechna práva vyhrazena.
+            </p>
         </div>
     </footer>
+
+    <!-- Order Nurse Modal -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     <div id="orderNurseModal" class="modal-overlay">
         <div class="form-container">
             <div class="modal-content">
-                    <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
-                    <h1>We're Opening Soon!</h1>
-                    <h2>Get an exclusive <strong>50% discount</strong> on your first order!</h2>
-                    <p>We'll email you your unique promo code</p>
-                        <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="hidden_iframe"  id="promoEmailForm">
-                                <label for="modalEmailInput"></label>
-                                <input type="email" id="modalEmailInput" name="name" placeholder="your.email@example.com" required>
-                                <button type="submit" class="button" id="submitBtn">
-                                    <span class="btn-text">Get Code</span>
-                                    <div id="loadingSpinner" class="spinner"></div>
-                                </button>
-                        </form>
-                    <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
+                <span class="modal-close-btn" id="closeOrderNurseModalBtn">&times;</span>
+                <h1>Brzy otevíráme!</h1>
+                <h2>Získejte exkluzivní <strong>50% slevu</strong> na první objednávku!</h2>
+                <p>Vaše unikátní promo-kód vám pošleme e-mailem.</p>
+                    <form action="https://script.google.com/macros/s/AKfycby9PnmtMgu38txcGJd2BWHjDF2AA_yDjwIePGUVpny54B08Sg9VtDNffk0czMgBwhqjKw/exec" method="post" target="hidden_iframe" id="promoEmailForm">
+                        <label for="modalEmailInput"></label>
+                        <input type="email" id="modalEmailInput" name="name" placeholder="vaše@email.cz" required>
+                        <button type="submit" class="button" id="submitBtn">
+                            <span class="btn-text">Získat kód</span>
+                            <div id="loadingSpinner" class="spinner"></div>
+                        </button>
+                    </form>
+                <p id="modalFormMessage" class="modal-message" style="display: none;"></p>
             </div>
         </div>
     </div>
+
     <script src="scripts.js"></script>
 </body>
-
 </html>

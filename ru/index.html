@@ -2,9 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!-- Meta Description -->
+    <meta name="description" content="Профессиональные медсестры на дом в Праге. Капельницы, инъекции и терапевтический массаж. Записаться на прием в тот же день с Sestra na Hodinu.">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sestra na Hodinu - Профессиональные услуги медсестры на дому в Праге">
+    <meta property="og:description" content="Профессиональные медсестры на дом в Праге. Капельницы, инъекции и терапевтический массаж от квалифицированных медсестер.">
+    <meta property="og:image" content="https://www.sestranahodinu.cz/img/drips_cl2.png">
+    <meta property="og:url" content="https://www.sestranahodinu.cz/ru/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sestra na Hodinu - Профессиональные услуги медсестры на дому">
+    <meta name="twitter:description" content="Профессиональные медсестры на дом в Праге. Капельницы, инъекции и терапевтический массаж от квалифицированных медсестер.">
+    <meta name="twitter:image" content="https://www.sestranahodinu.cz/img/drips_cl2.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.sestranahodinu.cz/ru/">
+    
+    <!-- Remaining head content -->
     <!-- Google Fonts preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +34,72 @@
             href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap"
             rel="stylesheet"
     />
-    <title>Sestra na Hodinu</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/">
+    <link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/">
+    <link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/">
+    <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
+    <title>Медсестра на дом Прага | Капельницы и инъекции | Sestra na Hodinu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Sestra na Hodinu",
+            "url": "https://www.sestranahodinu.cz/ru/",
+            "logo": "https://www.sestranahodinu.cz/img/logo.png",
+            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+            "description": "Профессиональные медсестры на дом в Праге. Капельницы, инъекции и терапевтический массаж. Записаться на прием в тот же день.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Прага",
+                "addressCountry": "CZ"
+            },
+            "telephone": "+420773629123",
+            "areaServed": "Прага",
+            "sameAs": [
+                "https://www.sestranahodinu.cz/",
+                "https://www.sestranahodinu.cz/en/",
+                "https://www.sestranahodinu.cz/uk/"
+            ],
+            "availableLanguage": ["Русский", "Чешский", "Английский", "Украинский"],
+            "priceRange": "699-1499 CZK",
+            "medicalSpecialty": ["Сестринское дело", "Домашнее медицинское обслуживание"],
+            "serviceType": [
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Назначенная капельница",
+                    "description": "Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Витаминная капельница",
+                    "description": "Пополнение запасов витаминов и минералов для повышения иммунитета и энергии."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Внутримышечные инъекции",
+                    "description": "Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта."
+                },
+                {
+                    "@type": "MedicalProcedure",
+                    "name": "Подкожные инъекции",
+                    "description": "Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом."
+                },
+                {
+                    "@type": "MedicalTherapy",
+                    "name": "Терапевтический массаж",
+                    "description": "Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу."
+                },
+                {
+                    "@type": "MedicalTherapy",
+                    "name": "Спортивный массаж",
+                    "description": "Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок."
+                }
+            ]
+        }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
     <script>
@@ -37,10 +120,10 @@
                 <!-- Language switcher -->
                 <div class="language-switcher">
                     <select id="lang-select" onchange="switchLanguage(this.value)">
-                        <option value="index.html">English</option>
-                        <option value="index-cs.html">Čeština</option>
-                        <option value="index-ru.html" selected>Русский</option>
-                        <option value="index-uk.html">Українська</option>
+                        <option value="/">Čeština</option>
+                        <option value="/en/">English</option>
+                        <option value="/ru/" selected>Русский</option>
+                        <option value="/uk/">Українська</option>
                     </select>
                 </div>
                 <ul class="nav-links">
@@ -74,7 +157,7 @@
                 <p>Быстрая, надежная и профессиональная медицинская помощь в комфортных условиях вашего дома.</p>
                 <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Вызвать медсестру</a>
             </div>
-            <img src="drips_cl2.png" alt="Медицинская иллюстрация" class="hero-image">
+            <img src="../img/drips_cl2.png" alt="Профессиональная медсестра ставит капельницу пациенту на дому в Праге" class="hero-image">
         </div>
     </section>
 
@@ -87,42 +170,42 @@
                 </p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon"><img src="icon_resized_2.png" alt="Капельницы"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_2.png" alt="Иконка медицинской капельницы" class="service-icon"></div>
                         <h3 class="service-title">Назначенная капельница</h3>
                         <p class="service-description">
                             Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="icon_resized_1.png" alt="Витаминная капельница"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_1.png" alt="Иконка витаминной капельницы" class="service-icon"></div>
                         <h3 class="service-title">Витаминная капельница</h3>
                         <p class="service-description">
                             Пополнение запасов витаминов и минералов для повышения иммунитета и энергии.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="icon_resized_3.png" alt="Внутримышечные инъекции"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_3.png" alt="Иконка внутримышечной инъекции" class="service-icon"></div>
                         <h3 class="service-title">Внутримышечные инъекции</h3>
                         <p class="service-description">
                             Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="inject.png" alt="Подкожные инъекции"></div>
+                        <div class="service-icon"><img src="../img/inject.png" alt="Иконка подкожной инъекции" class="service-icon"></div>
                         <h3 class="service-title">Подкожные инъекции</h3>
                         <p class="service-description">
                             Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="massage.png" alt="Терапевтический массаж"></div>
+                        <div class="service-icon"><img src="../img/massage.png" alt="Иконка терапевтического массажа" class="service-icon"></div>
                         <h3 class="service-title">Терапевтический массаж</h3>
                         <p class="service-description">
                             Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="surfe.png" alt="Спортивный массаж"></div>
+                        <div class="service-icon"><img src="../img/surfe.png" alt="Иконка спортивного массажа" class="service-icon"></div>
                         <h3 class="service-title">Спортивный массаж</h3>
                         <p class="service-description">
                             Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок.
@@ -141,7 +224,7 @@
                         Мы предлагаем простой и удобный процесс без излишних формальностей. Просто оформите заявку, дождитесь подтверждения и медсестра приедет к вам.
                     </p>
                     <div class="workflow-image">
-                        <img src="workflow1.png" alt="Схема работы">
+                        <img src="../img/workflow1.png" alt="Схема работы сервиса Sestra na Hodinu" class="workflow-image">
                     </div>
                 </div>
             </div>
@@ -156,7 +239,7 @@
                 </p>
                 <div class="nurses-grid">
                     <div class="nurse-card">
-                        <img src="IMG_7233.jpg" alt="Азбета Новотна" class="nurse-image">
+                        <img src="../img/IMG_7233.jpg" alt="Азбета Новотна" class="nurse-image">
                         <h3 class="nurse-name">Нигина Джебрак</h3>
                         <p class="nurse-role">Старшая медсестра</p>
                         <p class="nurse-description">
@@ -164,7 +247,7 @@
                         </p>
                     </div>
                     <div class="nurse-card">
-                        <img src="ivana.jpg" alt="Яна Кралова" class="nurse-image">
+                        <img src="../img/ivana.jpg" alt="Яна Кралова" class="nurse-image">
                         <h3 class="nurse-name">Яна Кралова</h3>
                         <p class="nurse-role">Медсестра на выезд</p>
                         <p class="nurse-description">
@@ -173,7 +256,7 @@
                         </p>
                     </div>
                     <div class="nurse-card">
-                        <img src="freepik__adjust__87469.jpeg" alt="Томаш Дворжак" class="nurse-image">
+                        <img src="../img/freepik__adjust__87469.jpeg" alt="Томаш Дворжак" class="nurse-image">
                         <h3 class="nurse-name">Томаш Дворжак</h3>
                         <p class="nurse-role">Медбрат неотложки</p>
                         <p class="nurse-description">
@@ -229,7 +312,7 @@
             <div class="container">
                 <div class="location-content">
                     <div class="location-map">
-                        <img src="map.png" alt="Карта Праги">
+                        <img src="../img/map.png" alt="Карта зоны обслуживания в Праге" class="location-map">
                     </div>
                     <div class="location-details">
                         <h1 class="section-title">Работаем в районе Праги</h1>
@@ -299,8 +382,7 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>
-
