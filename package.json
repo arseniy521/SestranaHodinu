@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.39.2"
+  },
+  "scripts": {
+    "minify-css": "csso styles.css -o styles.min.css",
+    "minify-js": "terser scripts.js -c -m -o scripts.min.js"
+  }
+}

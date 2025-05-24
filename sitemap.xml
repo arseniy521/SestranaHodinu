@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Czech (Default) -->
+  <url>
+    <loc>https://www.sestranahodinu.cz/</loc>
+    <lastmod>2023-07-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
+  </url>
+  
+  <!-- English -->
+  <url>
+    <loc>https://www.sestranahodinu.cz/en/</loc>
+    <lastmod>2023-07-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
+  </url>
+  
+  <!-- Russian -->
+  <url>
+    <loc>https://www.sestranahodinu.cz/ru/</loc>
+    <lastmod>2023-07-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
+  </url>
+  
+  <!-- Ukrainian -->
+  <url>
+    <loc>https://www.sestranahodinu.cz/uk/</loc>
+    <lastmod>2023-07-01T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
+  </url>
+  
+</urlset>
