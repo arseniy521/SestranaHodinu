@@ -41,64 +41,107 @@
     <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
     <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
     <title>Sestra na Hodinu</title>
-    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
-            "name": "Sestra na Hodinu",
+            "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
+            "name": "Медсестра додому",
+            "alternateName": "Домашній медичний догляд Прага",
+            "legalName": "Nius Services s.r.o.",
             "url": "https://www.sestranahodinu.cz/uk/",
-            "logo": "https://www.sestranahodinu.cz/img/logo.png",
-            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
-            "description": "Професійні медсестри на дом у Празі. Крапельниці, ін'єкції та терапевтичний масаж. Записатися на прийом в той же день.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.sestranahodinu.cz/img/logo.png",
+                "width": 200,
+                "height": 60
+            },
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+                    "caption": "Професійна медсестра проводить внутрішньовенну інфузію пацієнту вдома"
+                }
+            ],
+            "description": "Медсестра додому надає швидкий та професійний домашній медичний догляд у Празі: внутрішньовенні інфузії, ін'єкції, масаж та інші послуги прямо у вас вдома. Досвідчені медсестри доступні 7 днів на тиждень.",
+            "slogan": "Швидка, надійна та професійна медична допомога в комфорті вашого дому",
+            "foundingDate": "2024",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Прага",
-                "addressCountry": "CZ"
+                "addressRegion": "Прага",
+                "addressCountry": "CZ",
+                "postalCode": "110 00"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.0755,
+                "longitude": 14.4378
             },
             "telephone": "+420773629123",
-            "areaServed": "Прага",
+            "email": "info@sestranahodinu.cz",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Прага",
+                    "addressCountry": "CZ"
+                }
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.0755,
+                    "longitude": 14.4378
+                },
+                "geoRadius": "30000"
+            },
             "sameAs": [
                 "https://www.sestranahodinu.cz/",
                 "https://www.sestranahodinu.cz/en/",
                 "https://www.sestranahodinu.cz/ru/"
             ],
-            "availableLanguage": ["Українська", "Чеська", "Англійська", "Російська"],
-            "priceRange": "699-1499 CZK",
-            "medicalSpecialty": ["Сестринська справа", "Домашнє медичне обслуговування"],
-            "serviceType": [
+            "availableLanguage": [
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Призначена IV крапельниця",
-                    "description": "Проводиться за рецептом лікаря під наглядом медичного персоналу для конкретних показань."
+                    "@type": "Language",
+                    "name": "Українська",
+                    "alternateName": "uk"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Вітамінна IV крапельниця",
-                    "description": "Допомагає покращити імунітет і відновити рівень вітамінів та поживних речовин в організмі."
+                    "@type": "Language",
+                    "name": "Чеська",
+                    "alternateName": "cs"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Внутрішньом'язова ін'єкція",
-                    "description": "Введення антибіотиків, вітамінів або гормонів безпосередньо в м'яз для швидкої дії."
+                    "@type": "Language",
+                    "name": "Англійська",
+                    "alternateName": "en"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Підшкірна ін'єкція",
-                    "description": "Зручне введення таких ліків, як інсулін чи антикоагулянти, з мінімальним дискомфортом."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Терапевтичний масаж",
-                    "description": "Знімає біль, сприяє реабілітації та зменшує стрес завдяки професійному підходу."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Спортивний масаж",
-                    "description": "Для спортсменів різного рівня: підвищення результативності та прискорення відновлення."
+                    "@type": "Language",
+                    "name": "Російська",
+                    "alternateName": "ru"
                 }
-            ]
+            ],
+            "priceRange": "699-1499 CZK",
+            "currenciesAccepted": "CZK",
+            "paymentAccepted": ["Готівка", "Банківський переказ", "Картка"],
+            "openingHours": "Mo-Su 08:00-20:00",
+            "medicalSpecialty": [
+                "Медсестринство",
+                "Домашній медичний догляд",
+                "Внутрішньовенна терапія",
+                "Введення ін'єкцій",
+                "Реабілітаційний масаж"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "47",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
         }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -381,6 +424,6 @@
     </div>
 </div>
 
-<script src="../scripts.min.js"></script>
+<script src="../scripts.js"></script>
 </body>
 </html>

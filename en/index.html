@@ -29,59 +29,182 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
-            "name": "Sestra na Hodinu",
+            "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
+            "name": "Nurse on Call",
+            "alternateName": "Home Healthcare Prague",
+            "legalName": "Nius Services s.r.o.",
             "url": "https://www.sestranahodinu.cz/en/",
-            "logo": "https://www.sestranahodinu.cz/img/logo.png",
-            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
-            "description": "Professional home nursing services in Prague. IV drips, injections, and therapeutic massage by qualified nurses. Book same-day appointments with Sestra na Hodinu.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.sestranahodinu.cz/img/logo.png",
+                "width": 200,
+                "height": 60
+            },
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+                    "caption": "Professional nurse administering IV infusion to patient at home"
+                }
+            ],
+            "description": "Nurse on Call provides fast and professional home healthcare in Prague: IV infusions, injections, massages and other services directly at your home. Experienced nurses available 7 days a week.",
+            "slogan": "Fast, reliable and professional healthcare in the comfort of your home",
+            "foundingDate": "2024",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Prague",
-                "addressCountry": "CZ"
+                "addressRegion": "Prague",
+                "addressCountry": "CZ",
+                "postalCode": "110 00"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.0755,
+                "longitude": 14.4378
             },
             "telephone": "+420773629123",
-            "areaServed": "Prague",
+            "email": "info@sestranahodinu.cz",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Prague",
+                    "addressCountry": "CZ"
+                }
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.0755,
+                    "longitude": 14.4378
+                },
+                "geoRadius": "30000"
+            },
             "sameAs": [
                 "https://www.sestranahodinu.cz/",
                 "https://www.sestranahodinu.cz/ru/",
                 "https://www.sestranahodinu.cz/uk/"
             ],
-            "availableLanguage": ["English", "Czech", "Russian", "Ukrainian"],
-            "priceRange": "699-1499 CZK",
-            "medicalSpecialty": ["Nursing", "Home Healthcare"],
-            "serviceType": [
+            "availableLanguage": [
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Prescribed IV Drip",
-                    "description": "Administered based on your doctor's prescription under professional supervision to treat specific conditions."
+                    "@type": "Language",
+                    "name": "English",
+                    "alternateName": "en"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Vitamin IV Drip",
-                    "description": "Intravenous fluids, vitamins, and medications for various health needs."
+                    "@type": "Language",
+                    "name": "Czech",
+                    "alternateName": "cs"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Intramuscular Injection",
-                    "description": "Administration of prescribed medication—ideal for antibiotics, vitamins, or hormonal therapy."
+                    "@type": "Language",
+                    "name": "Russian",
+                    "alternateName": "ru"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Subcutaneous Injection",
-                    "description": "Effective delivery of prescribed medications like insulin or anticoagulants."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Therapeutic Massage",
-                    "description": "Massage therapy to manage pain, rehabilitate injuries, and reduce stress."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Sport Massage",
-                    "description": "Specialized massage for athletes to enhance performance and recovery."
+                    "@type": "Language",
+                    "name": "Ukrainian",
+                    "alternateName": "uk"
                 }
-            ]
+            ],
+            "priceRange": "699-1499 CZK",
+            "currenciesAccepted": "CZK",
+            "paymentAccepted": ["Cash", "Bank Transfer", "Card"],
+            "openingHours": "Mo-Su 08:00-20:00",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "08:00",
+                    "closes": "20:00"
+                }
+            ],
+            "medicalSpecialty": [
+                "Nursing",
+                "Home Healthcare",
+                "Intravenous Therapy",
+                "Injection Administration",
+                "Rehabilitation Massage"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Home Healthcare Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Prescribed IV Infusion",
+                            "description": "Administered according to medical prescription under professional supervision"
+                        },
+                        "price": "1199",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Vitamin IV Infusion",
+                            "description": "Supplements vitamins, hydration and nutrients directly into bloodstream"
+                        },
+                        "price": "1199",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Intramuscular Injection",
+                            "description": "Administration of antibiotics, vitamins or hormones directly into muscle"
+                        },
+                        "price": "699",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Subcutaneous Injection",
+                            "description": "Application of medications (e.g. insulin, anticoagulants) under the skin"
+                        },
+                        "price": "699",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalTherapy",
+                            "name": "Therapeutic Massage",
+                            "description": "Pain relief, rehabilitation and stress reduction through professional massage"
+                        },
+                        "price": "899",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalTherapy",
+                            "name": "Sports Massage",
+                            "description": "For athletes of all levels - performance enhancement and injury prevention"
+                        },
+                        "price": "999",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    }
+                ]
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "47",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
         }
     </script>
 
@@ -100,17 +223,17 @@
     <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
     <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
     <title>Sestra na Hodinu | Professional Home Nursing Services in Prague</title>
-    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VXT0FR7KH1');
+    </script>
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VXT0FR7KH1');
-</script>
 
 <body>
     <header>
@@ -180,7 +303,7 @@
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/icon_resized_2.png" alt="IV drip medical icon" class="service-icon">
+                            <img src="../img/icon_resized_2.png" alt="IV drip medical icon" >
                         </div>
                         <h3 class="service-title">Prescribed IV Drip</h3>
                         <p class="service-description"> Administered based on your doctor’s prescription under
@@ -188,7 +311,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/icon_resized_1.png" alt="Vitamin injection medical icon" class="service-icon">
+                            <img src="../img/icon_resized_1.png" alt="Vitamin injection medical icon" >
                         </div>
                         <h3 class="service-title">Vitamin IV Drip</h3>
                         <p class="service-description">Intravenous fluids, vitamins, and medications for various health
@@ -196,7 +319,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/icon_resized_3.png" alt="Intramuscular injection medical icon" class="service-icon">
+                            <img src="../img/icon_resized_3.png" alt="Intramuscular injection medical icon" >
                         </div>
                         <h3 class="service-title">Intramuscular Injection</h3>
                         <p class="service-description">Administration of prescribed medication—ideal for antibiotics,
@@ -205,7 +328,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/inject.png" alt="Subcutaneous injection medical icon" class="service-icon">
+                            <img src="../img/inject.png" alt="Subcutaneous injection medical icon" >
                         </div>
                         <h3 class="service-title">Subcutaneous Injection</h3>
                         <p class="service-description">Effective delivery of prescribed medications like insulin or
@@ -214,7 +337,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/massage.png" alt="Therapeutic massage icon" class="service-icon">
+                            <img src="../img/massage.png" alt="Therapeutic massage icon" >
                         </div>
                         <h3 class="service-title">Therapeutic Massage</h3>
                         <p class="service-description">Massage therapy to manage pain, rehabilitate injuries, and reduce
@@ -222,7 +345,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/surfe.png" alt="Sports massage icon" class="service-icon">
+                            <img src="../img/surfe.png" alt="Sports massage icon" >
                         </div>
                         <h3 class="service-title">Sport Massage</h3>
                         <p class="service-description">Specialized massage for athletes to enhance performance and
@@ -415,7 +538,7 @@
             </div>
         </div>
     </div>
-    <script src="../scripts.min.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>

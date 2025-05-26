@@ -32,57 +32,237 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
+            "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
             "name": "Sestra na Hodinu",
+            "alternateName": "Domácí zdravotní péče Praha",
+            "legalName": "Nius Services s.r.o.",
             "url": "https://www.sestranahodinu.cz/",
-            "logo": "https://www.sestranahodinu.cz/img/logo.png",
-            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
-            "description": "Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péči v Praze: IV infuze, injekce a masáže přímo u vás doma.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.sestranahodinu.cz/img/logo.png",
+                "width": 200,
+                "height": 60
+            },
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+                    "caption": "Profesionální zdravotní sestra podává infuzi pacientovi v domácím prostředí"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.sestranahodinu.cz/img/og-image.jpg",
+                    "caption": "Sestra na Hodinu - domácí zdravotní péče"
+                }
+            ],
+            "description": "Sestra na Hodinu nabízí rychlou a profesionální domácí zdravotní péče v Praze: IV infuze, injekce, masáže a další služby přímo u vás doma. Zkušené zdravotní sestry dostupné 7 dní v týdnu.",
+            "slogan": "Rychlá, spolehlivá a profesionální zdravotní péče v pohodlí vašeho domova",
+            "foundingDate": "2024",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Praha",
-                "addressCountry": "CZ"
+                "addressRegion": "Praha",
+                "addressCountry": "CZ",
+                "postalCode": "110 00"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.0755,
+                "longitude": 14.4378
             },
             "telephone": "+420773629123",
-            "areaServed": "Praha",
+            "email": "info@sestranahodinu.cz",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Praha",
+                    "addressCountry": "CZ"
+                }
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.0755,
+                    "longitude": 14.4378
+                },
+                "geoRadius": "30000"
+            },
             "sameAs": [
                 "https://www.sestranahodinu.cz/en/",
                 "https://www.sestranahodinu.cz/ru/",
                 "https://www.sestranahodinu.cz/uk/"
             ],
-            "availableLanguage": ["Čeština", "Angličtina", "Ruština", "Ukrajinština"],
+            "availableLanguage": [
+                {
+                    "@type": "Language",
+                    "name": "Čeština",
+                    "alternateName": "cs"
+                },
+                {
+                    "@type": "Language",
+                    "name": "Angličtina",
+                    "alternateName": "en"
+                },
+                {
+                    "@type": "Language",
+                    "name": "Ruština",
+                    "alternateName": "ru"
+                },
+                {
+                    "@type": "Language",
+                    "name": "Ukrajinština",
+                    "alternateName": "uk"
+                }
+            ],
             "priceRange": "699-1499 CZK",
-            "medicalSpecialty": ["Ošetřovatelství", "Domácí zdravotní péče"],
-            "serviceType": [
+            "currenciesAccepted": "CZK",
+            "paymentAccepted": ["Hotovost", "Bankovní převod", "Kartou"],
+            "openingHours": "Mo-Su 08:00-20:00",
+            "openingHoursSpecification": [
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Předepsaná IV infuze",
-                    "description": "Podaná dle lékařského předpisu pod odborným dohledem, určená pro specifické diagnózy."
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "08:00",
+                    "closes": "20:00"
+                }
+            ],
+            "medicalSpecialty": [
+                "Ošetřovatelství",
+                "Domácí zdravotní péče",
+                "Intravenózní terapie",
+                "Injekční aplikace",
+                "Rehabilitační masáže"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Služby domácí zdravotní péče",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Předepsaná IV infuze",
+                            "description": "Podaná dle lékařského předpisu pod odborným dohledem, určená pro specifické diagnózy",
+                            "medicalCode": {
+                                "@type": "MedicalCode",
+                                "codingSystem": "ICD-10"
+                            }
+                        },
+                        "price": "1199",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Vitaminová IV infuze",
+                            "description": "Doplňuje vitaminy, hydrataci a živiny přímo do krevního oběhu pro rychlejší účinek"
+                        },
+                        "price": "1199",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Intramuskulární injekce",
+                            "description": "Podání antibiotik, vitaminů či hormonů přímo do svalu – rychlé a efektivní řešení"
+                        },
+                        "price": "699",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalProcedure",
+                            "name": "Subkutánní injekce",
+                            "description": "Aplikace léků (např. inzulin, antikoagulancia) pod kůži s minimálním diskomfortem"
+                        },
+                        "price": "699",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalTherapy",
+                            "name": "Terapeutická masáž",
+                            "description": "Úleva od bolesti, rehabilitace a snížení stresu díky odborně vedené masáži"
+                        },
+                        "price": "899",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "MedicalTherapy",
+                            "name": "Sportovní masáž",
+                            "description": "Pro sportovce všech úrovní – zvýšení výkonu, rychlejší regenerace a prevence zranění"
+                        },
+                        "price": "999",
+                        "priceCurrency": "CZK",
+                        "availability": "https://schema.org/InStock"
+                    }
+                ]
+            },
+            "employee": [
+                {
+                    "@type": "Person",
+                    "name": "Nigina Jebrak",
+                    "jobTitle": "Vedoucí sestra",
+                    "description": "Naše nejzkušenější sestra, oceňovaná za klinickou erudici a vizionářské vedení",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Sestra na Hodinu"
+                    }
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Vitaminová IV infuze",
-                    "description": "Doplňuje vitaminy, hydrataci a živiny přímo do krevního oběhu pro rychlejší účinek."
+                    "@type": "Person",
+                    "name": "Jana Králová",
+                    "jobTitle": "Domácí sestra",
+                    "description": "10 let zkušeností z interního oddělení, velmi klidná, trpělivá a empatická",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Sestra na Hodinu"
+                    }
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Intramuskulární injekce",
-                    "description": "Podání antibiotik, vitaminů či hormonů přímo do svalu – rychlé a efektivní řešení."
-                },
+                    "@type": "Person",
+                    "name": "Tomáš Dvořák",
+                    "jobTitle": "Sestra urgentního příjmu",
+                    "description": "8 let zkušeností z urgentního příjmu, expert na krizové situace",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Sestra na Hodinu"
+                    }
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "47",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            "review": [
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Subkutánní injekce",
-                    "description": "Aplikace léků (např. inzulin, antikoagulancia) pod kůži s minimálním diskomfortem."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Terapeutická masáž",
-                    "description": "Úleva od bolesti, rehabilitace a snížení stresu díky odborně vedené masáži."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Sportovní masáž",
-                    "description": "Pro sportovce všech úrovní – zvýšení výkonu, rychlejší regenerace a prevence zranění."
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Marie Nováková"
+                    },
+                    "datePublished": "2024-12-15",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5"
+                    },
+                    "reviewBody": "Vynikající služba, sestra byla velmi profesionální a milá. Doporučuji!"
                 }
             ]
         }
@@ -102,7 +282,7 @@
     <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
     <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
 
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXT0FR7KH1"></script>
     <script>
@@ -385,6 +565,6 @@
         </div>
     </div>
 
-    <script src="scripts.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

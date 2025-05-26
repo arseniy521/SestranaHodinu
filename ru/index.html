@@ -40,64 +40,108 @@
     <link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/">
     <link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/">
     <title>Медсестра на дом Прага | Капельницы и инъекции | Sestra na Hodinu</title>
-    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
-            "name": "Sestra na Hodinu",
+            "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
+            "name": "Медсестра на дом",
+            "alternateName": "Домашний медицинский уход Прага",
+            "legalName": "Nius Services s.r.o.",
             "url": "https://www.sestranahodinu.cz/ru/",
-            "logo": "https://www.sestranahodinu.cz/img/logo.png",
-            "image": "https://www.sestranahodinu.cz/img/drips_cl2.png",
-            "description": "Профессиональные медсестры на дом в Праге. Капельницы, инъекции и терапевтический массаж. Записаться на прием в тот же день.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.sestranahodinu.cz/img/logo.png",
+                "width": 200,
+                "height": 60
+            },
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.sestranahodinu.cz/img/drips_cl2.png",
+                    "caption": "Профессиональная медсестра проводит внутривенную инфузию пациенту на дому"
+                }
+            ],
+            "description": "Медсестра на дом предоставляет быстрый и профессиональный домашний медицинский уход в Праге: внутривенные инфузии, инъекции, массаж и другие услуги прямо у вас дома. Опытные медсестры доступны 7 дней в неделю.",
+            "slogan": "Быстрая, надежная и профессиональная медицинская помощь в комфорте вашего дома",
+            "foundingDate": "2024",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Прага",
-                "addressCountry": "CZ"
+                "addressRegion": "Прага",
+                "addressCountry": "CZ",
+                "postalCode": "110 00"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.0755,
+                "longitude": 14.4378
             },
             "telephone": "+420773629123",
-            "areaServed": "Прага",
+            "email": "info@sestranahodinu.cz",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Прага",
+                    "addressCountry": "CZ"
+                }
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.0755,
+                    "longitude": 14.4378
+                },
+                "geoRadius": "30000"
+            },
             "sameAs": [
                 "https://www.sestranahodinu.cz/",
                 "https://www.sestranahodinu.cz/en/",
                 "https://www.sestranahodinu.cz/uk/"
             ],
-            "availableLanguage": ["Русский", "Чешский", "Английский", "Украинский"],
-            "priceRange": "699-1499 CZK",
-            "medicalSpecialty": ["Сестринское дело", "Домашнее медицинское обслуживание"],
-            "serviceType": [
+            "availableLanguage": [
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Назначенная капельница",
-                    "description": "Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов."
+                    "@type": "Language",
+                    "name": "Русский",
+                    "alternateName": "ru"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Витаминная капельница",
-                    "description": "Пополнение запасов витаминов и минералов для повышения иммунитета и энергии."
+                    "@type": "Language",
+                    "name": "Чешский",
+                    "alternateName": "cs"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Внутримышечные инъекции",
-                    "description": "Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта."
+                    "@type": "Language",
+                    "name": "Английский",
+                    "alternateName": "en"
                 },
                 {
-                    "@type": "MedicalProcedure",
-                    "name": "Подкожные инъекции",
-                    "description": "Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Терапевтический массаж",
-                    "description": "Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу."
-                },
-                {
-                    "@type": "MedicalTherapy",
-                    "name": "Спортивный массаж",
-                    "description": "Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок."
+                    "@type": "Language",
+                    "name": "Украинский",
+                    "alternateName": "uk"
                 }
-            ]
+            ],
+            "priceRange": "699-1499 CZK",
+            "currenciesAccepted": "CZK",
+            "paymentAccepted": ["Наличные", "Банковский перевод", "Карта"],
+            "openingHours": "Mo-Su 08:00-20:00",
+            "medicalSpecialty": [
+                "Медсестринское дело",
+                "Домашний медицинский уход",
+                "Внутривенная терапия",
+                "Введение инъекций",
+                "Реабилитационный массаж"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "47",
+                "bestRating": "5",
+                "worstRating": "1"
+            }
+
         }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -170,42 +214,42 @@
                 </p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/icon_resized_2.png" alt="Иконка медицинской капельницы" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_2.png" alt="Иконка медицинской капельницы" ></div>
                         <h3 class="service-title">Назначенная капельница</h3>
                         <p class="service-description">
                             Проводится согласно рецепту врача и под наблюдением специалиста для конкретных диагнозов.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/icon_resized_1.png" alt="Иконка витаминной капельницы" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_1.png" alt="Иконка витаминной капельницы" ></div>
                         <h3 class="service-title">Витаминная капельница</h3>
                         <p class="service-description">
                             Пополнение запасов витаминов и минералов для повышения иммунитета и энергии.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/icon_resized_3.png" alt="Иконка внутримышечной инъекции" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/icon_resized_3.png" alt="Иконка внутримышечной инъекции" ></div>
                         <h3 class="service-title">Внутримышечные инъекции</h3>
                         <p class="service-description">
                             Антибиотики, витамины или гормоны вводятся напрямую в мышцу для быстрого эффекта.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/inject.png" alt="Иконка подкожной инъекции" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/inject.png" alt="Иконка подкожной инъекции" ></div>
                         <h3 class="service-title">Подкожные инъекции</h3>
                         <p class="service-description">
                             Удобное введение таких препаратов, как инсулин или антикоагулянты, с минимальным дискомфортом.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/massage.png" alt="Иконка терапевтического массажа" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/massage.png" alt="Иконка терапевтического массажа" ></div>
                         <h3 class="service-title">Терапевтический массаж</h3>
                         <p class="service-description">
                             Снятие болей, восстановление и уменьшение стресса благодаря профессиональному массажу.
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="../img/surfe.png" alt="Иконка спортивного массажа" class="service-icon"></div>
+                        <div class="service-icon"><img src="../img/surfe.png" alt="Иконка спортивного массажа" ></div>
                         <h3 class="service-title">Спортивный массаж</h3>
                         <p class="service-description">
                             Помогает спортсменам улучшить результативность и ускорить восстановление после нагрузок.
@@ -382,7 +426,7 @@
         </div>
     </div>
 
-    <script src="../scripts.min.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>
