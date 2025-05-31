@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Czech (Default) Homepage -->
   <url>
     <loc>https://www.sestranahodinu.cz/</loc>
     <lastmod>2025-05-26T10:00:00+00:00</lastmod>
@@ -12,121 +10,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
   </url>
 
-  <!-- Service Pages - Czech -->
-  <url>
-    <loc>https://www.sestranahodinu.cz/sluzby/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sestranahodinu.cz/sluzby/iv-infuze/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sestranahodinu.cz/sluzby/injekce/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sestranahodinu.cz/sluzby/masaze/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- About/Company Pages -->
-  <url>
-    <loc>https://www.sestranahodinu.cz/o-nas/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sestranahodinu.cz/nas-tym/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Blog Section -->
-  <url>
-    <loc>https://www.sestranahodinu.cz/blog/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- FAQ and Support -->
-  <url>
-    <loc>https://www.sestranahodinu.cz/faq/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sestranahodinu.cz/kontakt/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Location Pages -->
-  <url>
-    <loc>https://www.sestranahodinu.cz/praha/</loc>
-    <lastmod>2025-05-26T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- English Version -->
   <url>
     <loc>https://www.sestranahodinu.cz/en/</loc>
     <lastmod>2025-05-26T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
   </url>
 
-  <!-- Russian Version -->
   <url>
     <loc>https://www.sestranahodinu.cz/ru/</loc>
     <lastmod>2025-05-26T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
   </url>
 
-  <!-- Ukrainian Version -->
   <url>
     <loc>https://www.sestranahodinu.cz/uk/</loc>
     <lastmod>2025-05-26T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://www.sestranahodinu.cz/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sestranahodinu.cz/"/>
   </url>
-
 </urlset>

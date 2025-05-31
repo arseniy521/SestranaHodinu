@@ -34,6 +34,9 @@
             href="https://fonts.googleapis.com/css2?family=Coco+Gothic:wght@400;700&family=TAN+Heading&display=swap"
             rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
     <link rel="alternate" hreflang="cs" href="https://www.sestranahodinu.cz/">
     <link rel="alternate" hreflang="en" href="https://www.sestranahodinu.cz/en/">
     <link rel="alternate" hreflang="ru" href="https://www.sestranahodinu.cz/ru/">
@@ -79,7 +82,7 @@
                 "longitude": 14.4378
             },
             "telephone": "+420773629123",
-            "email": "info@sestranahodinu.cz",
+            "email": "sestranahodinu@gmail.com",
             "areaServed": [
                 {
                     "@type": "City",
@@ -176,6 +179,7 @@
                     <li><a href="#workflow">Как это работает</a></li>
                     <!-- Testimonials & Articles hidden to match English -->
                     <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span><span></span><span></span>
@@ -273,7 +277,20 @@
                 </div>
             </div>
         </section>
-
+        <section id="why-us" class="benefits-section section">
+            <div class="container">
+                <div class="benefits-main-content">
+                    <div class="benefits-slogans-wrapper">
+                        <h3 class="benefit-slogan">🏠 Комфорт дома, без очередей</h3>
+                        <h3 class="benefit-slogan">⏰ Закажите и получите медсестру сегодня</h3>
+                        <h3 class="benefit-slogan">👩‍⚕️ Сертифицированные медсестры</h3>
+                    </div>
+                    <div class="benefits-image-wrapper">
+                        <img src="../img/nurse-benefits.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E5EBF6/458FF6?text=Медсестра+На+Дом';" alt="Медсестра предоставляет услуги на дому">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Nurses Section -->
         <section id="nurses" class="nurses-section">
             <div class="container">
@@ -359,11 +376,184 @@
                         <img src="../img/map.png" alt="Карта зоны обслуживания в Праге" class="location-map">
                     </div>
                     <div class="location-details">
-                        <h1 class="section-title">Работаем в районе Праги</h1>
+                        <h1 class="section-title">Работаем в Праге</h1>
                         <ul class="location-bullets">
                             <li>Быстрая и доступная медицинская помощь по вашему адресу.</li>
                             <li>Профессиональные медсестры доступны 7 дней в неделю.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacts Section -->
+        <section class="contacts-section" id="contacts">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <h2>Контакты</h2>
+                        <p>Мы доступны 7 дней в неделю. Не стесняйтесь связаться с нами любым удобным для вас способом.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="tel:+420773629123" class="contact-method">
+                            <div class="contact-icon phone-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Телефон</h4>
+                                <span>+420 773 629 123</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/sestra_na_hodinu/" target="_blank" class="contact-method">
+                            <div class="contact-icon instagram-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Instagram</h4>
+                                <span>@sestra_na_hodinu</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/420773629123" target="_blank" class="contact-method">
+                            <div class="contact-icon whatsapp-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <span>+420 773 629 123</span>
+                            </div>
+                        </a>
+                        <a href="https://t.me/sestra_na_hodinu" target="_blank" class="contact-method">
+                            <div class="contact-icon telegram-icon">
+                                <i class="fab fa-telegram-plane"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telegram</h4>
+                                <span>@sestra_na_hodinu</span>
+                            </div>
+                        </a>
+                        <a href="mailto:sestranahodinu@gmail.com" class="contact-method">
+                            <div class="contact-icon email-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <span>sestranahodinu@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Как я могу заказать медсестру?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Вы можете заказать медсестру несколькими способами:</p>
+                            <ul>
+                                <li>Заполнив форму "Заказать медсестру" на нашем сайте</li>
+                                <li>Позвонив нам по телефону <a href="tel:+420773629123">+420 773 629 123</a></li>
+                                <li>По электронной почте <a href="mailto:info@sestranahodinu.cz">info@sestranahodinu.cz</a></li>
+                                <li>Через WhatsApp или Telegram</li>
+                            </ul>
+                            <p>После заказа мы свяжемся с вами для подтверждения времени визита.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Как быстро может приехать медсестра?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы стремимся обеспечить уход как можно быстрее. В зависимости от вашего местоположения в Праге и текущей доступности медсестер, мы обычно можем приехать в течение 2-3 часов после подтверждения заказа. Для плановых визитов рекомендуем заказывать медсестру как минимум за день.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Нужен ли мне рецепт врача для внутривенной терапии?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, для назначенной внутривенной терапии требуется рецепт врача. Наши медсестры могут вводить только препараты, назначенные врачом. Если вас интересуют витаминные или гидратационные капельницы, их можно получить без рецепта, так как они считаются пищевыми добавками.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Какие способы оплаты вы принимаете?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы принимаем оплату наличными и банковским переводом. Оплата производится после оказания услуги. Для постоянных клиентов мы предлагаем возможность выставления счета и оплаты общей суммы в конце месяца.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Предоставляете ли вы услуги за пределами Праги?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы в основном работаем в Праге, но можем предоставлять услуги в прилегающих районах (до 30 км) по индивидуальной договоренности. За выезд за пределы Праги взимается дополнительная плата в размере 10 крон/км сверх базовой ставки.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Каковы ваши часы работы?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы доступны 7 дней в неделю, включая выходные и праздничные дни, с 8:00 до 22:00. В экстренных случаях мы также предлагаем возможность визитов вне стандартного рабочего времени по предварительной договоренности.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Покрываются ли ваши услуги страховкой?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>В настоящее время наши услуги не покрываются медицинской страховкой. Это прямая оплата клиентом. По запросу мы выдадим квитанцию об оплате, которую вы можете использовать для возможного возмещения в вашей страховой компании, если у вас есть дополнительная страховка на премиальное медицинское обслуживание.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Нужно ли что-то подготовить перед приездом медсестры?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 8.5L12 15.5L5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для максимально комфортного визита мы рекомендуем:</p>
+                            <ul>
+                                <li>Подготовить рецепт врача (если требуется)</li>
+                                <li>Обеспечить спокойное и чистое место для проведения процедуры</li>
+                                <li>Заранее сообщить нам о вашем состоянии здоровья и возможных аллергиях</li>
+                                <li>Иметь под рукой контактную информацию вашего лечащего врача</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -399,7 +589,7 @@
                 </div>
             </div>
             <p class="copyright">
-                © Sestra na Hodinu 2025. Все права защищены.
+                © Nius Services s.r.o. 2025. Все права защищены.
             </p>
         </div>
     </footer>

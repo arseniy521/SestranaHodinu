@@ -217,7 +217,26 @@ document.addEventListener('DOMContentLoaded', () => {
         msg.style.display = 'block';
     });
 });
+// FAQ Accordion Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+            // Close all questions
+            faqQuestions.forEach(q => {
+                q.setAttribute('aria-expanded', 'false');
+            });
+
+            // Toggle current question
+            if (!isExpanded) {
+                question.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
 // Handle form submission
 // if (promoEmailForm) {
 //     promoEmailForm.addEventListener('submit', function(event) {
