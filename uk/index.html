@@ -159,38 +159,52 @@
 <body>
 <header>
     <div class="container">
-        <nav>
-            <div class="logo">
-                <div class="logo-icon">S</div>
-                <div class="logo-text">Sestra na Hodinu</div>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    <div class="logo-icon">S</div>
+                    <div class="logo-text">Sestra na Hodinu</div>
+                </div>
             </div>
-            <!-- Language switcher -->
-            <div class="language-switcher">
-                <select id="lang-select" onchange="switchLanguage(this.value)">
-                    <option value="/">Čeština</option>
-                    <option value="/en/">English</option>
-                    <option value="/ru/">Русский</option>
-                    <option value="/uk/" selected>Українська</option>
-                </select>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+<!--                    <li><a href="#workflow">Як це працює</a></li>-->
+                    <li><a href="#pricing">Ціни</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#workflow">Як це працює</a></li>
-                <!-- Testimonials & Articles hidden to match English -->
-                <li><a href="#pricing">Ціни</a></li>
-                <li><a href="#contacts">Контактi</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <select id="lang-select" onchange="switchLanguage(this.value)">
+                        <option value="/">Čeština</option>
+                        <option value="/en/">English</option>
+                        <option value="/ru/">Русский</option>
+                        <option value="/uk/" selected>Українська</option>
+                    </select>
+                </div>
+                <div class="nav-contact">
+                    <a href="tel:+420773629123" class="phone-number">
+                        <span>+420 773 629 123</span>
+                    </a>
+                    <a href="https://wa.me/420773629123" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Відкрити меню">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-            <div class="mobile-nav">
+            <div class="mobile-nav" id="mobileNav">
                 <a href="#home">Головна</a>
                 <a href="#services">Послуги</a>
                 <a href="#workflow">Як це працює</a>
                 <a href="#pricing">Ціни</a>
+                <a href="#contacts">Контакти</a>
             </div>
         </nav>
+
     </div>
 </header>
 
@@ -203,7 +217,8 @@
                     <span id="dynamic-text">Призначені крапельниці</span> від професійної медсестри у вас вдома.
                 </h1>
                 <p>Швидка, надійна та професійна медична допомога в затишку вашої оселі.</p>
-                <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Викликати медсестру</a>
+<!--                <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Викликати медсестру</a>-->
+                <a href="https://nurseinprague.setmore.com/book" id="openOrderNurseModalBtn" class="button" target="_blank" rel="noopener">Objednat sestru</a>
             </div>
             <img src="../img/drips_cl2.png" alt="Професійна медсестра проводить крапельницю пацієнту вдома у Празі" class="hero-image">
         </div>
@@ -213,55 +228,60 @@
     <section id="services" class="services-section">
         <div class="container">
             <h2 class="section-title">Наші послуги</h2>
-            <p class="section-description">
-                Ми пропонуємо широкий спектр медичних послуг на дому, які надаються кваліфікованими медсестрами. Обирайте, що вам потрібно, і ми організуємо швидкий виїзд.
-            </p>
+            <p class="section-description">Професійна медична допомога в комфорті вашої оселі. Наші кваліфіковані медсестри надають широкий спектр медичних послуг.</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/icon_resized_2.png" alt="Іконка медичної крапельниці"></div>
-                    <h3 class="service-title">Призначена IV крапельниця</h3>
-                    <p class="service-description">
-                        Проводиться за рецептом лікаря під наглядом медичного персоналу для конкретних показань.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/icon_resized_2.png" alt="Іконка крапельниці">
+                    </div>
+                    <h3 class="service-title">Внутрішньовенні інфузії</h3>
+                    <p class="service-description">💡 Призначені препарати або вітамінотерапія
+                        👉 Професійне введення з моніторингом</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/icon_resized_1.png" alt="Іконка вітамінної крапельниці"></div>
-                    <h3 class="service-title">Вітамінна IV крапельниця</h3>
-                    <p class="service-description">
-                        Допомагає покращити імунітет і відновити рівень вітамінів та поживних речовин в організмі.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/icon_resized_3.png" alt="Іконка ін'єкції">
+                    </div>
+                    <h3 class="service-title">Ін'єкції</h3>
+                    <p class="service-description">💡 Внутрішньом'язові та підшкірні ін'єкції
+                        👉 Точне введення призначених препаратів</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/icon_resized_3.png" alt="Іконка внутрішньом'язової ін'єкції"></div>
-                    <h3 class="service-title">Внутрішньом'язова ін'єкція</h3>
-                    <p class="service-description">
-                        Введення антибіотиків, вітамінів або гормонів безпосередньо в м’яз для швидкої дії.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/WoundDressingBandage.png" alt="Іконка догляду за ранами">
+                    </div>
+                    <h3 class="service-title">Догляд за ранами</h3>
+                    <p class="service-description">💡 Післяопераційний догляд та обробка ран
+                        👉 Професійна заміна пов'язок</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/inject.png" alt="Іконка підшкірної ін'єкції"></div>
-                    <h3 class="service-title">Підшкірна ін'єкція</h3>
-                    <p class="service-description">
-                        Зручне введення таких ліків, як інсулін чи антикоагулянти, з мінімальним дискомфортом.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/HygieneAssistance.png" alt="Іконка особистої гігієни">
+                    </div>
+                    <h3 class="service-title">Особистий догляд</h3>
+                    <p class="service-description">💡 Допомога з щоденною гігієною
+                        👉 Дбайливий догляд за літніми та інвалідами</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/massage.png" alt="Іконка терапевтичного масажу"></div>
-                    <h3 class="service-title">Терапевтичний масаж</h3>
-                    <p class="service-description">
-                        Знімає біль, сприяє реабілітації та зменшує стрес завдяки професійному підходу.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/escort.png" alt="Іконка супроводу">
+                    </div>
+                    <h3 class="service-title">Медичний супровід</h3>
+                    <p class="service-description">💡 Візити до лікарні та на прийоми
+                        👉 Допомога з перекладом та документами</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><img src="../img/surfe.png" alt="Іконка спортивного масажу"></div>
-                    <h3 class="service-title">Спортивний масаж</h3>
-                    <p class="service-description">
-                        Для спортсменів різного рівня: підвищення результативності та прискорення відновлення.
-                    </p>
+                    <div class="service-icon">
+                        <img src="../img/massage.png" alt="Іконка масажу">
+                    </div>
+                    <h3 class="service-title">Медичний масаж</h3>
+                    <p class="service-description">💡 Лікувальний та реабілітаційний масаж
+                        👉 Полегшення болю та покращення рухливості</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Workflow Section -->
     <section id="workflow" class="workflow-section">

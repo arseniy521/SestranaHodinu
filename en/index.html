@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <!-- Meta Description -->
     <meta name="description" content="Professional home nursing services in Prague. IV drips, injections, and therapeutic massage by qualified nurses. Book same-day appointments with Sestra na Hodinu.">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,8 +29,8 @@
         {
             "@context": "https://schema.org",
             "@type": ["MedicalBusiness", "LocalBusiness", "HealthAndBeautyBusiness"],
-            "name": "Nurse on Call",
-            "alternateName": "Home Healthcare Prague",
+            "name": "Nurse in Prague",
+            "alternateName": "Home Healthcare",
             "legalName": "Nius Services s.r.o.",
             "url": "https://www.sestranahodinu.cz/en/",
             "logo": {
@@ -240,42 +239,51 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <div class="logo-icon">S</div>
-                    <div class="logo-text">Sestra na Hodinu</div>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <div class="logo">
+                        <div class="logo-icon">N</div>
+                        <div class="logo-text">Nurse in Prague</div>
+                    </div>
                 </div>
-                <!-- Add this to your navigation menu -->
-                <!-- Jazykový přepínač -->
-                <div class="language-switcher">
-                    <select id="lang-select" onchange="switchLanguage(this.value)">
-                        <option value="/">Čeština</option>
-                        <option value="/en/" selected>English</option>
-                        <option value="/ru/">Русский</option>
-                        <option value="/uk/">Українська</option>
-                    </select>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#workflow">Workflow</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#workflow">Workflow</a></li>
-<!--                    <li><a href="#testimonials">Testimonials</a></li>-->
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-<!--                    <li><a href="articles.html">Articles</a></li>-->
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
+                <div class="nav-right">
+                    <div class="language-switcher">
+                        <select id="lang-select" onchange="switchLanguage(this.value)">
+                            <option value="/">Čeština</option>
+                            <option value="/en/" selected>English</option>
+                            <option value="/ru/">Русский</option>
+                            <option value="/uk/">Українська</option>
+                        </select>
+                    </div>
+                    <div class="nav-contact">
+                        <a href="tel:+420773629123" class="phone-number">
+
+                            <span>+420 773 629 123</span>
+                        </a>
+                        <a href="https://wa.me/420773629123" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                    <button class="hamburger" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
-                <div class="mobile-nav">
+                <div class="mobile-nav" id="mobileNav">
                     <a href="#home">Home</a>
                     <a href="#services">Services</a>
                     <a href="#workflow">Workflow</a>
-<!--                    <a href="#testimonials">Testimonials</a>-->
                     <a href="#pricing">Pricing</a>
-<!--                    <a href="articles.html">Articles</a>-->
+                    <a href="#contacts">Contacts</a>
                 </div>
             </nav>
         </div>
@@ -292,7 +300,7 @@
                     </h1>
                     <!-- <h1>Prescribed Injections performed by a nurse in your home.</h1> -->
                     <p>Fast, reliable, and professional healthcare at home.</p>
-                    <a href="#" id="openOrderNurseModalBtn" class="button">Order Nurse</a>
+                    <a href="https://nurseinprague.setmore.com/book" id="openOrderNurseModalBtn" class="button" target="_blank" rel="noopener">Order a Nurse</a>
                 </div>
                 <img src="../img/drips_cl2.png" alt="Professional nurse administering IV drip at patient's home in Prague" class="hero-image">
             </div>
@@ -308,51 +316,52 @@
                         <div class="service-icon">
                             <img src="../img/icon_resized_2.png" alt="IV drip medical icon" >
                         </div>
-                        <h3 class="service-title">Prescribed IV Drip</h3>
-                        <p class="service-description"> Administered based on your doctor’s prescription under
-                            professional supervision to treat specific conditions.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="../img/icon_resized_1.png" alt="Vitamin injection medical icon" >
-                        </div>
-                        <h3 class="service-title">Vitamin IV Drip</h3>
-                        <p class="service-description">Intravenous fluids, vitamins, and medications for various health
-                            needs.</p>
+                        <h3 class="service-title">IV Infusion</h3>
+                        <p class="service-description"> 💡For hydration, vitamin therapy, or prescribed IV treatments.
+                            👉 Nurse-administered IV with monitoring at your home or hotel.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
                             <img src="../img/icon_resized_3.png" alt="Intramuscular injection medical icon" >
                         </div>
-                        <h3 class="service-title">Intramuscular Injection</h3>
-                        <p class="service-description">Administration of prescribed medication—ideal for antibiotics,
-                            vitamins, or hormonal therapy.
+                        <h3 class="service-title">Injection</h3>
+                        <p class="service-description">💡For IVF, antibiotics, insulin, or vitamin therapy.
+                            👉 Timely, precise administration of prescribed injections.
                         </p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/inject.png" alt="Subcutaneous injection medical icon" >
+                            <img src="../img/WoundDressingBandage.png" alt="Wound Dressing & Bandage" >
                         </div>
-                        <h3 class="service-title">Subcutaneous Injection</h3>
-                        <p class="service-description">Effective delivery of prescribed medications like insulin or
-                            anticoagulants.
+                        <h3 class="service-title">Wound Dressing & Bandage</h3>
+                        <p class="service-description">💡 For patients recovering from surgery or injuries.
+                            👉 Sterile dressing change, wound cleaning, and infection check.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/HygieneAssistance.png" alt="Subcutaneous injection medical icon" >
+                        </div>
+                        <h3 class="service-title">Hygiene Assistance</h3>
+                        <p class="service-description">💡 For elderly or disabled clients needing daily care.
+                            👉 Gentle support with personal hygiene and comfort.
                         </p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <img src="../img/massage.png" alt="Therapeutic massage icon" >
+                            <img src="../img/escort.png" alt="Escort to/from Hospital" >
+                        </div>
+                        <h3 class="service-title">Escort to/from Hospital</h3>
+                        <p class="service-description">💡 For patients needing support during travel or hospital visits.
+                            👉 Nurse escort with mobility help, forms, and EN/CZ translation.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/massage.png" alt="Sports massage icon" >
                         </div>
                         <h3 class="service-title">Therapeutic Massage</h3>
-                        <p class="service-description">Massage therapy to manage pain, rehabilitate injuries, and reduce
-                            stress.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="../img/surfe.png" alt="Sports massage icon" >
-                        </div>
-                        <h3 class="service-title">Sport Massage</h3>
-                        <p class="service-description">Specialized massage for athletes to enhance performance and
-                            recovery.</p>
+                        <p class="service-description">💡For clients with pain, swelling, or limited mobility.
+                            👉 Medical massage to relieve pain and improve circulation.</p>
                     </div>
                 </div>
             </div>
@@ -464,7 +473,7 @@
             </div>
         </section>
 
-        <!-- <section id="testimonials" class="testimonials-section">
+        <section id="testimonials" class="testimonials-section">
             <div class="container">
                 <h2 class="section-title">What people are saying about home healthcare</h2>
                 <div class="testimonial-card">
@@ -484,7 +493,7 @@
                     <button class="slider-button next-button">&#8594;</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="location" class="location-section">
             <div class="container">

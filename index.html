@@ -299,38 +299,49 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <div class="logo-icon">S</div>
-                    <div class="logo-text">Sestra na Hodinu</div>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <div class="logo">
+                        <div class="logo-icon">S</div>
+                        <div class="logo-text">Sestra na Hodinu</div>
+                    </div>
                 </div>
-                <!-- Jazykový přepínač -->
-                <div class="language-switcher">
-                    <select id="lang-select" onchange="switchLanguage(this.value)">
-                        <option value="/" selected>Čeština</option>
-                        <option value="/en/">English</option>
-                        <option value="/ru/">Русский</option>
-                        <option value="/uk/">Українська</option>
-                    </select>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="#home">Domů</a></li>
+                        <li><a href="#services">Služby</a></li>
+                        <li><a href="#workflow">Jak to funguje</a></li>
+                        <li><a href="#pricing">Ceník</a></li>
+                        <li><a href="#contacts">Kontakty</a></li>
+                    </ul>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Domů</a></li>
-                    <li><a href="#services">Služby</a></li>
-                    <li><a href="#workflow">Jak to funguje</a></li>
-                    <!-- Testimonials & Articles hidden to match English -->
-                    <li><a href="#pricing">Ceník</a></li>
-                    <li><a href="#contacts">Kontakty</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-right">
+                    <div class="language-switcher">
+                        <select id="lang-select" onchange="switchLanguage(this.value)">
+                            <option value="/" selected>Čeština</option>
+                            <option value="/en/">English</option>
+                            <option value="/ru/">Русский</option>
+                            <option value="/uk/">Українська</option>
+                        </select>
+                    </div>
+                    <div class="nav-contact">
+                        <a href="tel:+420773629123" class="phone-number">
+                            <span>+420 773 629 123</span>
+                        </a>
+                        <a href="https://wa.me/420773629123" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                    <button class="hamburger" aria-label="Otevřít menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
-                <div class="mobile-nav">
+                <div class="mobile-nav" id="mobileNav">
                     <a href="#home">Domů</a>
                     <a href="#services">Služby</a>
                     <a href="#workflow">Jak to funguje</a>
                     <a href="#pricing">Ceník</a>
+                    <a href="#contacts">Kontakty</a>
                 </div>
             </nav>
         </div>
@@ -345,7 +356,7 @@
                         <span id="dynamic-text">Předepsané infuze</span> zajištěné sestrou u vás doma.
                     </h1>
                     <p>Rychlá, spolehlivá a profesionální zdravotní péče v pohodlí vašeho domova.</p>
-                    <a href="javascript:void(0)" id="openOrderNurseModalBtn" class="button">Objednat sestru</a>
+                    <a href="https://nurseinprague.setmore.com/book" id="openOrderNurseModalBtn" class="button" target="_blank" rel="noopener">Objednat sestru</a>
                 </div>
                 <img src="img/drips_cl2.png" alt="Profesionální zdravotní sestra podává infuzi pacientovi v domácím prostředí v Praze" class="hero-image">
             </div>
@@ -355,51 +366,55 @@
         <section id="services" class="services-section">
             <div class="container">
                 <h2 class="section-title">Naše služby</h2>
-                <p class="section-description">
-                    Přinášíme širokou nabídku domácích zdravotnických služeb, prováděných zkušenými sestrami. Vyberte si, co potřebujete, a my se postaráme o zbytek.
-                </p>
+                <p class="section-description">Profesionální zdravotní péče v pohodlí vašeho domova. Naše kvalifikované zdravotní sestry poskytují širokou škálu zdravotnických služeb.</p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/icon_resized_2.png" alt="Ikona lékařské infuze"></div>
-                        <h3 class="service-title">Předepsaná IV infuze</h3>
-                        <p class="service-description">
-                            Podaná dle lékařského předpisu pod odborným dohledem, určená pro specifické diagnózy.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/icon_resized_2.png" alt="Ikona infuze">
+                        </div>
+                        <h3 class="service-title">Nitrožilní infuze</h3>
+                        <p class="service-description">💡 Předepsané léky nebo vitaminová terapie
+                            👉 Profesionální podání s monitoringem</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/icon_resized_1.png" alt="Ikona vitaminové infuze"></div>
-                        <h3 class="service-title">Vitaminová IV infuze</h3>
-                        <p class="service-description">
-                            Doplňuje vitaminy, hydrataci a živiny přímo do krevního oběhu pro rychlejší účinek.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/icon_resized_3.png" alt="Ikona injekce">
+                        </div>
+                        <h3 class="service-title">Injekce</h3>
+                        <p class="service-description">💡 Intramuskulární a subkutánní injekce
+                            👉 Přesné podání předepsaných léků</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/icon_resized_3.png" alt="Ikona intramuskulární injekce"></div>
-                        <h3 class="service-title">Intramuskulární injekce</h3>
-                        <p class="service-description">
-                            Podání antibiotik, vitaminů či hormonů přímo do svalu – rychlé a efektivní řešení.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/WoundDressingBandage.png" alt="Ikona péče o rány">
+                        </div>
+                        <h3 class="service-title">Péče o rány</h3>
+                        <p class="service-description">💡 Pooperační péče a ošetření ran
+                            👉 Profesionální výměna obvazů</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/inject.png" alt="Ikona subkutánní injekce"></div>
-                        <h3 class="service-title">Subkutánní injekce</h3>
-                        <p class="service-description">
-                            Aplikace léků (např. inzulin, antikoagulancia) pod kůži s minimálním diskomfortem.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/HygieneAssistance.png" alt="Ikona osobní hygieny">
+                        </div>
+                        <h3 class="service-title">Osobní péče</h3>
+                        <p class="service-description">💡 Pomoc s denní hygienou
+                            👉 Pečlivá péče o seniory a invalidy</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/massage.png" alt="Ikona terapeutické masáže"></div>
-                        <h3 class="service-title">Terapeutická masáž</h3>
-                        <p class="service-description">
-                            Úleva od bolesti, rehabilitace a snížení stresu díky odborně vedené masáži.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/escort.png" alt="Ikona doprovodu">
+                        </div>
+                        <h3 class="service-title">Zdravotní doprovod</h3>
+                        <p class="service-description">💡 Návštěvy nemocnice a vyšetření
+                            👉 Pomoc s překladem a dokumenty</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon"><img src="img/surfe.png" alt="Ikona sportovní masáže"></div>
-                        <h3 class="service-title">Sportovní masáž</h3>
-                        <p class="service-description">
-                            Pro sportovce všech úrovní – zvýšení výkonu, rychlejší regenerace a prevence zranění.
-                        </p>
+                        <div class="service-icon">
+                            <img src="img/massage.png" alt="Ikona masáže">
+                        </div>
+                        <h3 class="service-title">Zdravotní masáž</h3>
+                        <p class="service-description">💡 Léčebná a rehabilitační masáž
+                            👉 Úleva od bolesti a zlepšení pohyblivosti</p>
                     </div>
                 </div>
             </div>

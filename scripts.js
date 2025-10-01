@@ -19,7 +19,7 @@ const translations = {
         "Vitamínové injekce"
     ],
     ru: [
-        "Назначенные лекарства",
+        "Обезболивающие",
         "Капельницы",
         "Инъекции",
         "Антибиотики",
@@ -136,7 +136,7 @@ if (hamburger && mobileNav) { // Check if elements exist
 
 // --- JavaScript for Order Nurse Modal ---
 const orderNurseModal = document.getElementById('orderNurseModal');
-const openModalBtn = document.getElementById('openOrderNurseModalBtn');
+// const openModalBtn = document.getElementById('openOrderNurseModalBtn');
 const closeModalBtn = document.getElementById('closeOrderNurseModalBtn');
 const promoEmailForm = document.getElementById('promoEmailForm');
 const modalEmailInput = document.getElementById('modalEmailInput');
